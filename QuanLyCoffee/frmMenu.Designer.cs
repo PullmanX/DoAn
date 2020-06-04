@@ -138,7 +138,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(62, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 53);
+            this.button1.Size = new System.Drawing.Size(82, 53);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -171,6 +171,7 @@
             // 
             this.ltvMenu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ltvMenu.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ltvMenu.HideSelection = false;
             this.ltvMenu.Location = new System.Drawing.Point(866, 112);
             this.ltvMenu.Name = "ltvMenu";
             this.ltvMenu.Size = new System.Drawing.Size(385, 507);
