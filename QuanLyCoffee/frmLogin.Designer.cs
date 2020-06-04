@@ -90,7 +90,7 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(116, 39);
             this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Logingggggggg";
+            this.btnLogin.Text = "Dang Nhap";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
