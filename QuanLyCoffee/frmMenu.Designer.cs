@@ -127,7 +127,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Location = new System.Drawing.Point(203, 38);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 53);
+            this.button2.Size = new System.Drawing.Size(85, 53);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             // 
