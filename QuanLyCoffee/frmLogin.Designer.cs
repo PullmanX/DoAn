@@ -53,11 +53,10 @@
             this.txtTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtTaiKhoan.HideSelection = false;
-            this.txtTaiKhoan.Location = new System.Drawing.Point(64, 215);
-            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(48, 175);
             this.txtTaiKhoan.Multiline = true;
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(303, 31);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(227, 25);
             this.txtTaiKhoan.TabIndex = 0;
             this.txtTaiKhoan.Text = "Enter User";
             this.txtTaiKhoan.Click += new System.EventHandler(this.txtTaiKhoan_Click);
@@ -70,11 +69,10 @@
             this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtMatKhau.HideSelection = false;
-            this.txtMatKhau.Location = new System.Drawing.Point(64, 293);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatKhau.Location = new System.Drawing.Point(48, 238);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(303, 31);
+            this.txtMatKhau.Size = new System.Drawing.Size(227, 25);
             this.txtMatKhau.TabIndex = 1;
             this.txtMatKhau.Tag = "";
             this.txtMatKhau.Text = "Enter Password";
@@ -88,12 +86,11 @@
             this.btnLogin.BackColor = System.Drawing.Color.Gray;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(132, 347);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(99, 282);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(155, 48);
+            this.btnLogin.Size = new System.Drawing.Size(116, 39);
             this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Dang Nhap";
+            this.btnLogin.Text = "Luong Nhat Tan";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -103,10 +100,9 @@
             this.btnExit.BackColor = System.Drawing.Color.Gray;
             this.btnExit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(152, 402);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(114, 327);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(109, 48);
+            this.btnExit.Size = new System.Drawing.Size(82, 39);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Thoat";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -119,10 +115,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 186);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 27);
+            this.label1.Size = new System.Drawing.Size(88, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = "Username:";
             // 
@@ -133,10 +128,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 263);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(13, 214);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 27);
+            this.label2.Size = new System.Drawing.Size(88, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
@@ -147,10 +141,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(93, 129);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(70, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 38);
+            this.label3.Size = new System.Drawing.Size(180, 31);
             this.label3.TabIndex = 4;
             this.label3.Text = "LOGIN NOW";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -158,29 +151,26 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(59, 241);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(44, 196);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 1);
+            this.panel1.Size = new System.Drawing.Size(230, 1);
             this.panel1.TabIndex = 5;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(59, 319);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(44, 259);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(307, 1);
+            this.panel2.Size = new System.Drawing.Size(230, 1);
             this.panel2.TabIndex = 6;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::QuanLyCoffee.Properties.Resources._704252;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 289);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 235);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(29, 25);
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
@@ -188,10 +178,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::QuanLyCoffee.Properties.Resources._17797;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 212);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 172);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(29, 25);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -199,21 +188,20 @@
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyCoffee.Properties.Resources._17797;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(132, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(99, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(102, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(405, 469);
+            this.ClientSize = new System.Drawing.Size(304, 381);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -228,7 +216,6 @@
             this.Controls.Add(this.txtTaiKhoan);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLogin";
             this.Text = "Đăng Nhập.";
             this.Load += new System.EventHandler(this.frmLogin_Load);

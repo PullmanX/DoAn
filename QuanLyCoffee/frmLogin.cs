@@ -13,7 +13,7 @@ namespace QuanLyCoffee
 {
     public partial class frmLogin : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QL_NhanVien;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NhanVien;Integrated Security=True");
         public static string ID_USER = "";
 
         public frmLogin()
