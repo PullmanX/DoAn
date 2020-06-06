@@ -141,11 +141,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(70, 105);
+            this.label3.Location = new System.Drawing.Point(97, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 31);
+            this.label3.Size = new System.Drawing.Size(104, 31);
             this.label3.TabIndex = 4;
-            this.label3.Text = "LOGIN NOW";
+            this.label3.Text = "LOGIN";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel1

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.grbCF = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,17 @@
             this.frmExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.ltvMenu = new System.Windows.Forms.ListView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.grbCF.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThanhToan
@@ -178,6 +189,94 @@
             this.ltvMenu.TabIndex = 3;
             this.ltvMenu.UseCompatibleStateImageBehavior = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(101, 334);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(477, 142);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Milk Tea";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(323, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Bạc Xỉu: 22.000";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(180, 103);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Cà Fê sữa: 20.000";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(37, 103);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 17);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "TS Truyền Thống";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button3.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(343, 38);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 53);
+            this.button3.TabIndex = 0;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.BackgroundImage = global::QuanLyCoffee.Properties.Resources.cafesua;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Location = new System.Drawing.Point(203, 38);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 53);
+            this.button5.TabIndex = 0;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button6.BackgroundImage = global::QuanLyCoffee.Properties.Resources.cafeda;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Location = new System.Drawing.Point(62, 38);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(69, 53);
+            this.button6.TabIndex = 0;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -185,6 +284,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1363, 700);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ltvMenu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.grbCF);
@@ -197,6 +297,9 @@
             this.Load += new System.EventHandler(this.frmMenu_Load);
             this.grbCF.ResumeLayout(false);
             this.grbCF.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +318,13 @@
         private System.Windows.Forms.Button frmExit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListView ltvMenu;
-
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }
