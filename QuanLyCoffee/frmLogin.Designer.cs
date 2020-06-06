@@ -86,11 +86,11 @@
             this.btnLogin.BackColor = System.Drawing.Color.Gray;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(99, 282);
+            this.btnLogin.Location = new System.Drawing.Point(48, 282);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(116, 39);
+            this.btnLogin.Size = new System.Drawing.Size(167, 39);
             this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Luong Nhat Tan";
+            this.btnLogin.Text = "dang nhap";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
