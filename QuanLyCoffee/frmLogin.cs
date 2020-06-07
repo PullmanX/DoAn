@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.InteropServices;
 
 namespace QuanLyCoffee
 {
     public partial class frmLogin : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NhanVien;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QL_NhanVien;Integrated Security=True");
         public static string ID_USER = "";
 
         public frmLogin()
@@ -21,12 +22,11 @@ namespace QuanLyCoffee
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            DialogResult tb = MessageBox.Show("Bạn có muốn thoát hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (tb == DialogResult.OK)
-                Application.Exit();
-        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd,  int wnsg, int wparam, int lparam);
+
 
         private string getID(string username, string pass)
         {
@@ -110,9 +110,23 @@ namespace QuanLyCoffee
             txtMatKhau.PasswordChar = '*';
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
+        private void frmLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void ptbExit_Click(object sender, EventArgs e)
+        {
+            DialogResult tb = MessageBox.Show("Bạn có muốn thoát hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (tb == DialogResult.OK)
+                Application.Exit();
+        }
+
+        private void ptbSleep_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 

@@ -35,6 +35,7 @@
             this.mntQuanLyNV = new System.Windows.Forms.ToolStripMenuItem();
             this.mntLichLam = new System.Windows.Forms.ToolStripMenuItem();
             this.mntThoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1363, 749);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -121,6 +123,7 @@
         private System.Windows.Forms.ToolStripMenuItem mntHangTon;
         private System.Windows.Forms.ToolStripMenuItem mntQuanLyNV;
         private System.Windows.Forms.ToolStripMenuItem mntLichLam;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

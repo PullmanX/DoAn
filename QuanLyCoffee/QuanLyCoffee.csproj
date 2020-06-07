@@ -126,6 +126,7 @@
     <EmbeddedResource Include="frmThongTinNhanVien.resx">
       <DependentUpon>frmThongTinNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -234,6 +235,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kisspng-usb-flash-drives-computer-icons-clip-art-connector-universal-serial-bus-usb-icon-5ab103261871c3.6309399215215501181001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hinhnen-Coffee-4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
