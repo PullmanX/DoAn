@@ -180,7 +180,7 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMatKhau.BackColor = System.Drawing.Color.DarkCyan;
+            this.txtMatKhau.BackColor = System.Drawing.Color.DarkSlateGray;
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.Gainsboro;
@@ -199,7 +199,7 @@
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTaiKhoan.BackColor = System.Drawing.Color.DarkCyan;
+            this.txtTaiKhoan.BackColor = System.Drawing.Color.DarkSlateGray;
             this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.ForeColor = System.Drawing.Color.Gainsboro;
@@ -216,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(320, 384);
             this.Controls.Add(this.pictureBox3);
