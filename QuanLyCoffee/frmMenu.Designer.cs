@@ -299,7 +299,7 @@
             this.groupBox1.Size = new System.Drawing.Size(477, 142);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Milk Tea";
+            this.groupBox1.Text = "Nuoc Giai Khat";
             // 
             // label8
             // 
