@@ -251,6 +251,24 @@
   <ItemGroup>
     <None Include="Resources\logo4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ts tt1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1512151004335-d5b6c2ff7e121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sua tuoi1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ts chocolate1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ts trân châu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ts tt2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
