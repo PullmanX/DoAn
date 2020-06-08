@@ -169,9 +169,9 @@
             this.btnLogin.BackColor = System.Drawing.Color.Gray;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(78, 309);
+            this.btnLogin.Location = new System.Drawing.Point(29, 309);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(164, 39);
+            this.btnLogin.Size = new System.Drawing.Size(263, 39);
             this.btnLogin.TabIndex = 38;
             this.btnLogin.Text = "Đăng Nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
