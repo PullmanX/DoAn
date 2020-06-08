@@ -240,19 +240,16 @@
     <None Include="Resources\Hinhnen-Coffee-4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\photo-1512151004335-d5b6c2ff7e12.jpg" />
+    <None Include="Resources\logo1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sua tuoi.jpeg" />
+    <None Include="Resources\logo2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ts chocolate.jpg" />
+    <None Include="Resources\logo3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ts trân châu.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ts tt.jpg" />
+    <None Include="Resources\logo4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

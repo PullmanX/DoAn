@@ -47,9 +47,6 @@ namespace QuanLyCoffee
             cboGioiTinh.Enabled = hien;
             txtDiaChi.Enabled = hien;
             txtSDT.Enabled = hien;
-            cboTinhTrang.Enabled = hien;
-            cboUser.Enabled = hien;
-            cboLuong.Enabled = hien;
             //Ẩn hiện 2 nút Lưu và Hủy
             btnLuu.Enabled = hien;
             btnHuy.Enabled = hien;
@@ -62,7 +59,7 @@ namespace QuanLyCoffee
             //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
             //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
 
-            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NhanVien;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QL_NhanVien;Integrated Security=True");
             LoadDuLieu("Select * from NHANVIEN");
             //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
             btnSua.Enabled = false;
@@ -85,9 +82,6 @@ namespace QuanLyCoffee
                 cboGioiTinh.Text = row.Cells["GioiTinh"].Value.ToString();
                 txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
                 txtSDT.Text = row.Cells["SDT"].Value.ToString();
-                cboTinhTrang.Text = row.Cells["TinhTrang"].Value.ToString();
-                cboUser.Text = row.Cells["id_user"].Value.ToString();
-                cboLuong.Text = row.Cells["Luong"].Value.ToString();
 
         }
 
@@ -105,9 +99,6 @@ namespace QuanLyCoffee
             dtpNgSinh.ResetText();
             cboGioiTinh.ResetText();
             txtDiaChi.Clear();
-            cboTinhTrang.ResetText();
-            cboUser.ResetText();
-            cboLuong.ResetText();
         }
 
 
@@ -139,8 +130,8 @@ namespace QuanLyCoffee
                 errChiTiet.Clear();
             }
                 //Insert vao CSDL
-            sql = "INSERT INTO NHANVIEN(MaNV,TenNV,NgSinh, GioiTinh, DiaChi, SDT, TinhTrang, ID_User, Luong )VALUES (";
-            sql += "N'" + txtMaNV.Text + "',N'" + txtTenNV.Text + "','" + dtpNgSinh.Value + "','" + cboGioiTinh.Text + "',N'" + txtDiaChi.Text + "',N'" + txtSDT.Text + "','" + cboTinhTrang.Text + "','" + cboUser.Text + "','" + cboLuong.Text + "'  )";
+            sql = "INSERT INTO NHANVIEN(MaNV,TenNV,NgSinh, GioiTinh, DiaChi, SDT )VALUES (";
+            sql += "N'" + txtMaNV.Text + "',N'" + txtTenNV.Text + "','" + dtpNgSinh.Value + "','" + cboGioiTinh.Text + "',N'" + txtDiaChi.Text + "',N'" + txtSDT.Text + "')";
             //Nếu nút Sửa enable thì thực hiện cập nhật dữ liệu
             if (btnSua.Enabled == true)
             {
@@ -151,9 +142,6 @@ namespace QuanLyCoffee
                 sql += "DiaChi = N'" + txtDiaChi.Text + "' ";
                 sql += "SDT = N'" + txtSDT.Text + "' ";
                 sql += "Where MaSP = N'" + txtMaNV.Text + "'";
-                sql += "TinhTrang = '" + cboTinhTrang.Text + "'";
-                sql += "id_user = '" + cboUser.Text + "'";
-                sql += "Luong = '" + cboLuong.Text + "'";
 
             }
             //Nếu nút Xóa enable thì thực hiện xóa dữ liệu

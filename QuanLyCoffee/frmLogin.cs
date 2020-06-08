@@ -95,8 +95,7 @@ namespace QuanLyCoffee
             
         }
 
-        
-
+       
         private void txtMatKhau_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyValue == 13)

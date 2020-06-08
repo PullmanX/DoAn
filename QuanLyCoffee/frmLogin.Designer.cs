@@ -99,7 +99,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyCoffee.Properties.Resources._17797;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(116, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(107, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(102, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,11 +144,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(114, 126);
+            this.label3.Location = new System.Drawing.Point(89, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 31);
+            this.label3.Size = new System.Drawing.Size(141, 31);
             this.label3.TabIndex = 40;
-            this.label3.Text = "LOGIN";
+            this.label3.Text = "LOGIN IN";
             // 
             // label1
             // 
@@ -169,11 +169,11 @@
             this.btnLogin.BackColor = System.Drawing.Color.Gray;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(29, 309);
+            this.btnLogin.Location = new System.Drawing.Point(95, 306);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(263, 39);
+            this.btnLogin.Size = new System.Drawing.Size(159, 39);
             this.btnLogin.TabIndex = 38;
-            this.btnLogin.Text = "Đăng Nhập";
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -235,7 +235,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.85D;
             this.Text = "Đăng Nhập.";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmLogin_MouseDown);

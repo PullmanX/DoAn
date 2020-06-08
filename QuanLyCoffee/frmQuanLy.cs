@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace QuanLyCoffee
 {
@@ -16,40 +17,54 @@ namespace QuanLyCoffee
         {
             InitializeComponent();
         }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wnsg, int wparam, int lparam);
 
-        private void mntThoat_Click(object sender, EventArgs e)
+        private void sbtnThongTin_Click(object sender, EventArgs e)
         {
-            frmLogin frm = new frmLogin();
-            frm.Show();
-            Close();
-        }
-
-        private void mntLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mntMenu_Click(object sender, EventArgs e)
-        {
-            frmMenu frm = new frmMenu();
-            frm.MdiParent = this;
-            frm.Show();
-        }
-
-        private void mntDangNhap_Click(object sender, EventArgs e)
-        {
-            frmLogin frm = new frmLogin();
-            frm.Show();
-        }
-
-        private void mntQuanLyNV_Click(object sender, EventArgs e)
-        {
-            frmThongTinNhanVien frm1 = new frmThongTinNhanVien();
+            frmThongTinNhanVien frm1 = new frmThongTinNhanVien() {Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            this.pLoad.Controls.Add(frm1);
             frm1.Show();
         }
 
- 
+        private void sbtnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult tb = MessageBox.Show("Bạn có muốn đăng xuất hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (tb == DialogResult.OK)
+            {
+                frmLogin frm = new frmLogin();
+                frm.Show();
+                Close();
+            }
+                
+        }
 
 
+
+        private void frmQuanLy_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+
+        private void panel6_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void ptbSleep_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void ptbExit_Click(object sender, EventArgs e)
+        {
+            DialogResult tb = MessageBox.Show("Bạn có muốn thoát hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (tb == DialogResult.OK)
+                Close();
+        }
     }
 }
