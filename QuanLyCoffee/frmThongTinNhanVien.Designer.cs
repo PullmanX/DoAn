@@ -292,6 +292,7 @@
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.Size = new System.Drawing.Size(605, 167);
             this.dgvKetQua.TabIndex = 0;
+            this.dgvKetQua.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgView1_CellContentClick);
             // 
             // groupBox2
             // 

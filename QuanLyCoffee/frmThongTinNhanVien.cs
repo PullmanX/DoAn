@@ -74,6 +74,7 @@ namespace QuanLyCoffee
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
             btnThem.Enabled = false;
+            btnHuy.Enabled = true;
                 DataGridViewRow row = new DataGridViewRow();
                 row = dgvKetQua.Rows[e.RowIndex];
                 txtMaNV.Text = row.Cells["MaNV"].Value.ToString();
