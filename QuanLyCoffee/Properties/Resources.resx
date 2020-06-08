@@ -124,6 +124,9 @@
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ts trân châu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ts trân châu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Main.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,6 +148,9 @@
   <data name="BacXiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BacXiu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ts tt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ts tt2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +159,15 @@
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo-1512151004335-d5b6c2ff7e12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1512151004335-d5b6c2ff7e121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ts tt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ts tt1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sua tuoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sua tuoi1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,6 +211,9 @@
   <data name="7042521" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7042521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ts chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ts chocolate1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="704252" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\704252.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,22 +226,13 @@
   <data name="Hinhnen-Coffee-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hinhnen-Coffee-4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ts tt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ts tt1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7up.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="photo-1512151004335-d5b6c2ff7e12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo-1512151004335-d5b6c2ff7e121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="number1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\number1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sua tuoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sua tuoi1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ts chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ts chocolate1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ts trân châu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ts trân châu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ts tt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ts tt2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
