@@ -33,7 +33,7 @@
             this.mntKhuVuc = new System.Windows.Forms.ToolStripMenuItem();
             this.mntThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnMenu);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(36, 51);
             this.groupBox1.Name = "groupBox1";
@@ -81,16 +81,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa Đơn Mới";
             // 
-            // button1
+            // btnMenu
             // 
-            this.button1.Location = new System.Drawing.Point(59, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 27);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "+";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMenu.Location = new System.Drawing.Point(59, 41);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(33, 27);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.Text = "+";
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // frmNhanVien
             // 
@@ -101,8 +101,7 @@
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.IsMdiContainer = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmNhanVien";
             this.Text = "Phần Mềm Ocha";
@@ -122,6 +121,6 @@
         private System.Windows.Forms.ToolStripMenuItem mntKhuVuc;
         private System.Windows.Forms.ToolStripMenuItem mntThoat;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

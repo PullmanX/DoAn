@@ -38,14 +38,13 @@ namespace QuanLyCoffee
 
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             frmMenu frmmn = new frmMenu();
             frmmn.Show();
-            this.Close();
         }
     }
 }

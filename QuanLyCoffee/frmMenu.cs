@@ -18,7 +18,7 @@ namespace QuanLyCoffee
         }
         private void frmMenu_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)

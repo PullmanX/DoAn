@@ -30,6 +30,12 @@
         {
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.grbCF = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,18 +45,18 @@
             this.frmExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -62,6 +68,9 @@
             this.button16 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
@@ -81,15 +90,6 @@
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.lsvBill = new System.Windows.Forms.ListView();
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -104,7 +104,7 @@
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThanhToan.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnThanhToan.Location = new System.Drawing.Point(866, 625);
             this.btnThanhToan.Name = "btnThanhToan";
@@ -116,7 +116,8 @@
             // 
             // grbCF
             // 
-            this.grbCF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.grbCF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.grbCF.BackColor = System.Drawing.Color.Transparent;
             this.grbCF.Controls.Add(this.label23);
             this.grbCF.Controls.Add(this.label22);
@@ -138,6 +139,78 @@
             this.grbCF.TabIndex = 2;
             this.grbCF.TabStop = false;
             this.grbCF.Text = "Coffee";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(453, 82);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(54, 16);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "Mocha";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(687, 82);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(38, 16);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Late";
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(557, 82);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(90, 16);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "Cappuccino";
+            // 
+            // button12
+            // 
+            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button12.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button12.Cursor = System.Windows.Forms.Cursors.No;
+            this.button12.Location = new System.Drawing.Point(671, 14);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(70, 55);
+            this.button12.TabIndex = 4;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button11.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button11.Cursor = System.Windows.Forms.Cursors.No;
+            this.button11.Location = new System.Drawing.Point(560, 14);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(70, 55);
+            this.button11.TabIndex = 3;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button10.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button10.Cursor = System.Windows.Forms.Cursors.No;
+            this.button10.Location = new System.Drawing.Point(447, 14);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(70, 55);
+            this.button10.TabIndex = 2;
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -210,7 +283,7 @@
             // 
             // frmExit
             // 
-            this.frmExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.frmExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.frmExit.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.frmExit.Location = new System.Drawing.Point(1062, 625);
             this.frmExit.Name = "frmExit";
@@ -222,12 +295,13 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(584, 14);
+            this.label4.Location = new System.Drawing.Point(321, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(218, 76);
             this.label4.TabIndex = 2;
@@ -235,7 +309,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.label24);
@@ -258,6 +333,53 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Milk Tea";
             // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(668, 83);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(77, 16);
+            this.label25.TabIndex = 10;
+            this.label25.Text = "TS OLong";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(539, 83);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(108, 16);
+            this.label24.TabIndex = 9;
+            this.label24.Text = "Milo Váng Sữa";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(444, 83);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(63, 16);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "TS Thái";
+            // 
+            // button13
+            // 
+            this.button13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button13.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button13.Location = new System.Drawing.Point(671, 18);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(70, 55);
+            this.button13.TabIndex = 7;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -270,6 +392,28 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Sữa Tươi";
             // 
+            // button14
+            // 
+            this.button14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button14.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button14.Location = new System.Drawing.Point(560, 18);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(70, 55);
+            this.button14.TabIndex = 6;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button15.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button15.Location = new System.Drawing.Point(447, 18);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(70, 55);
+            this.button15.TabIndex = 5;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -281,18 +425,6 @@
             this.label6.Size = new System.Drawing.Size(102, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "TS Chocolate";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(45, 83);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 16);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "TS Truyền Thống";
             // 
             // button3
             // 
@@ -327,74 +459,17 @@
             this.button6.TabIndex = 0;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // label7
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button10.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button10.Cursor = System.Windows.Forms.Cursors.No;
-            this.button10.Location = new System.Drawing.Point(447, 14);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(70, 55);
-            this.button10.TabIndex = 2;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button11.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button11.Cursor = System.Windows.Forms.Cursors.No;
-            this.button11.Location = new System.Drawing.Point(560, 14);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(70, 55);
-            this.button11.TabIndex = 3;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button12.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button12.Cursor = System.Windows.Forms.Cursors.No;
-            this.button12.Location = new System.Drawing.Point(671, 14);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(70, 55);
-            this.button12.TabIndex = 4;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button13.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button13.Location = new System.Drawing.Point(671, 18);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(70, 55);
-            this.button13.TabIndex = 7;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button14.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button14.Location = new System.Drawing.Point(560, 18);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(70, 55);
-            this.button14.TabIndex = 6;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button15.BackgroundImage = global::QuanLyCoffee.Properties.Resources.BacXiu;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button15.Location = new System.Drawing.Point(447, 18);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(70, 55);
-            this.button15.TabIndex = 5;
-            this.button15.UseVisualStyleBackColor = true;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(45, 83);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 16);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "TS Truyền Thống";
             // 
             // button9
             // 
@@ -500,7 +575,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button16);
             this.groupBox1.Controls.Add(this.label8);
@@ -522,7 +598,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label18);
@@ -544,6 +621,42 @@
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tea";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(668, 86);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(57, 16);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Trà Lài";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(545, 86);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(106, 16);
+            this.label18.TabIndex = 12;
+            this.label18.Text = "Trà Hoa Hồng";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(453, 86);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 16);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Trà Táo";
             // 
             // button19
             // 
@@ -649,7 +762,8 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.button25);
             this.groupBox4.Controls.Add(this.label14);
@@ -771,116 +885,10 @@
             this.label16.TabIndex = 1;
             this.label16.Text = "Đá Xay Socola";
             // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(453, 86);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 16);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Trà Táo";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(545, 86);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(106, 16);
-            this.label18.TabIndex = 12;
-            this.label18.Text = "Trà Hoa Hồng";
-            // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(668, 86);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(57, 16);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Trà Lài";
-            // 
-            // label20
-            // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(444, 83);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(63, 16);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "TS Thái";
-            // 
-            // label21
-            // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(557, 82);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(90, 16);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "Cappuccino";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(687, 82);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(38, 16);
-            this.label22.TabIndex = 6;
-            this.label22.Text = "Late";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(453, 82);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(54, 16);
-            this.label23.TabIndex = 7;
-            this.label23.Text = "Mocha";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(539, 83);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(108, 16);
-            this.label24.TabIndex = 9;
-            this.label24.Text = "Milo Váng Sữa";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(668, 83);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(77, 16);
-            this.label25.TabIndex = 10;
-            this.label25.Text = "TS OLong";
-            // 
             // lsvBill
             // 
+            this.lsvBill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
@@ -919,7 +927,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::QuanLyCoffee.Properties.Resources.photo_1512151004335_d5b6c2ff7e12;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1363, 700);
             this.Controls.Add(this.lsvBill);
@@ -932,7 +939,7 @@
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.frmExit);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMenu";
             this.Text = "Bảng Menu";
             this.Load += new System.EventHandler(this.frmMenu_Load);
