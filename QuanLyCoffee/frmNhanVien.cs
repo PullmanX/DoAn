@@ -21,7 +21,7 @@ namespace QuanLyCoffee
         {
             frmLogin frm = new frmLogin();
             frm.Show();
-            Close();
+            this.Close();
         }
 
         private void mntMenu_Click(object sender, EventArgs e)
