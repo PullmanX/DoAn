@@ -97,7 +97,7 @@
             this.sbtnLichLam.Location = new System.Drawing.Point(20, 280);
             this.sbtnLichLam.Name = "sbtnLichLam";
             this.sbtnLichLam.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnLichLam.Size = new System.Drawing.Size(119, 28);
+            this.sbtnLichLam.Size = new System.Drawing.Size(161, 28);
             this.sbtnLichLam.TabIndex = 2;
             this.sbtnLichLam.TabStop = false;
             this.sbtnLichLam.Text = "Lịch Làm";
