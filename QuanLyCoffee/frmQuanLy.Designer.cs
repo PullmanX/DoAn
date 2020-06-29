@@ -128,7 +128,7 @@
             this.sbtnThongTin.Location = new System.Drawing.Point(20, 222);
             this.sbtnThongTin.Name = "sbtnThongTin";
             this.sbtnThongTin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnThongTin.Size = new System.Drawing.Size(183, 28);
+            this.sbtnThongTin.Size = new System.Drawing.Size(202, 28);
             this.sbtnThongTin.TabIndex = 1;
             this.sbtnThongTin.TabStop = false;
             this.sbtnThongTin.Text = "Thông Tin Nhân Viên";
