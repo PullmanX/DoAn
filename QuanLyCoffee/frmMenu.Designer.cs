@@ -116,8 +116,7 @@
             // 
             // grbCF
             // 
-            this.grbCF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.grbCF.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.grbCF.BackColor = System.Drawing.Color.Transparent;
             this.grbCF.Controls.Add(this.label23);
             this.grbCF.Controls.Add(this.label22);
@@ -295,8 +294,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -309,8 +307,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.label24);
@@ -575,8 +572,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button16);
             this.groupBox1.Controls.Add(this.label8);
@@ -598,8 +594,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label18);
@@ -762,8 +757,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.button25);
             this.groupBox4.Controls.Add(this.label14);
@@ -847,7 +841,7 @@
             this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button28.Location = new System.Drawing.Point(329, 18);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(70, 55);
+            this.button28.Size = new System.Drawing.Size(83, 55);
             this.button28.TabIndex = 0;
             this.button28.UseVisualStyleBackColor = true;
             // 
