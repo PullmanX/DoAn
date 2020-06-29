@@ -40,14 +40,14 @@
             this.pa1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.ptbSleep = new DevExpress.XtraEditors.PictureEdit();
             this.ptbExit = new DevExpress.XtraEditors.PictureEdit();
+            this.ptbSleep = new DevExpress.XtraEditors.PictureEdit();
             this.pLoad = new System.Windows.Forms.Panel();
             this.pnQuanLy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbSleep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSleep.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnQuanLy
@@ -152,7 +152,7 @@
             this.sbtnNKHD.Location = new System.Drawing.Point(20, 169);
             this.sbtnNKHD.Name = "sbtnNKHD";
             this.sbtnNKHD.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnNKHD.Size = new System.Drawing.Size(183, 28);
+            this.sbtnNKHD.Size = new System.Drawing.Size(196, 28);
             this.sbtnNKHD.TabIndex = 0;
             this.sbtnNKHD.TabStop = false;
             this.sbtnNKHD.Text = "Nhật Ký Hoạt Động";
@@ -189,19 +189,6 @@
             this.panel6.TabIndex = 4;
             this.panel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDown);
             // 
-            // ptbSleep
-            // 
-            this.ptbSleep.EditValue = ((object)(resources.GetObject("ptbSleep.EditValue")));
-            this.ptbSleep.Location = new System.Drawing.Point(639, 0);
-            this.ptbSleep.Name = "ptbSleep";
-            this.ptbSleep.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.ptbSleep.Properties.Appearance.Options.UseBackColor = true;
-            this.ptbSleep.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.ptbSleep.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.ptbSleep.Size = new System.Drawing.Size(34, 35);
-            this.ptbSleep.TabIndex = 36;
-            this.ptbSleep.Click += new System.EventHandler(this.ptbSleep_Click);
-            // 
             // ptbExit
             // 
             this.ptbExit.EditValue = ((object)(resources.GetObject("ptbExit.EditValue")));
@@ -214,6 +201,19 @@
             this.ptbExit.Size = new System.Drawing.Size(34, 35);
             this.ptbExit.TabIndex = 36;
             this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
+            // 
+            // ptbSleep
+            // 
+            this.ptbSleep.EditValue = ((object)(resources.GetObject("ptbSleep.EditValue")));
+            this.ptbSleep.Location = new System.Drawing.Point(639, 0);
+            this.ptbSleep.Name = "ptbSleep";
+            this.ptbSleep.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.ptbSleep.Properties.Appearance.Options.UseBackColor = true;
+            this.ptbSleep.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.ptbSleep.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.ptbSleep.Size = new System.Drawing.Size(34, 35);
+            this.ptbSleep.TabIndex = 36;
+            this.ptbSleep.Click += new System.EventHandler(this.ptbSleep_Click);
             // 
             // pLoad
             // 
@@ -243,8 +243,8 @@
             this.pnQuanLy.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbSleep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbSleep.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
