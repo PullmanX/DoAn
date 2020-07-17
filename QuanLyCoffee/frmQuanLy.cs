@@ -66,5 +66,10 @@ namespace QuanLyCoffee
             if (tb == DialogResult.OK)
                 Close();
         }
+
+        private void pnQuanLy_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -70,6 +70,7 @@
             this.pnQuanLy.Name = "pnQuanLy";
             this.pnQuanLy.Size = new System.Drawing.Size(222, 542);
             this.pnQuanLy.TabIndex = 2;
+            this.pnQuanLy.Paint += new System.Windows.Forms.PaintEventHandler(this.pnQuanLy_Paint);
             // 
             // sbtnExit
             // 

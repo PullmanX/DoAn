@@ -59,7 +59,7 @@ namespace QuanLyCoffee
             //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
             //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
 
-            con.ConnectionString = (@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QL_NhanVien;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
             LoadDuLieu("Select * from NHANVIEN");
             //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
             btnSua.Enabled = false;
