@@ -50,7 +50,7 @@ namespace QuanLyCoffee
                     {
                         MessageBox.Show("Chúc mừng bạn đã đăng nhập thành công");
                         this.Hide();
-                        FrmQLNhanVien f = new FrmQLNhanVien();
+                        frmThemTaiKhoan f = new frmThemTaiKhoan();
                         f.Show();
                     }
                     else

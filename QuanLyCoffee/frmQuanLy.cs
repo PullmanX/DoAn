@@ -24,7 +24,7 @@ namespace QuanLyCoffee
 
         private void sbtnThongTin_Click(object sender, EventArgs e)
         {
-            FrmQLNhanVien nv = new FrmQLNhanVien();
+            frmThongTinNhanVien nv = new frmThongTinNhanVien();
             nv.ShowDialog();
         }
 
@@ -66,9 +66,11 @@ namespace QuanLyCoffee
                 Close();
         }
 
-        private void pnQuanLy_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void sbtnThemTaiKhoan_Click(object sender, EventArgs e)
+        {
+            frmThemTaiKhoan f = new frmThemTaiKhoan();
+            f.ShowDialog();
         }
     }
 }

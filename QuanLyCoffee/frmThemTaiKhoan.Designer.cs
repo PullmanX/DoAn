@@ -1,6 +1,6 @@
 ﻿namespace QuanLyCoffee
 {
-    partial class FrmQLNhanVien
+    partial class frmThemTaiKhoan
     {
         /// <summary>
         /// Required designer variable.
@@ -95,8 +95,8 @@
             // 
             this.cbbquyen.FormattingEnabled = true;
             this.cbbquyen.Items.AddRange(new object[] {
-            "user",
-            "admin"});
+            "Member",
+            "Admin"});
             this.cbbquyen.Location = new System.Drawing.Point(407, 96);
             this.cbbquyen.Name = "cbbquyen";
             this.cbbquyen.Size = new System.Drawing.Size(121, 21);
@@ -223,7 +223,7 @@
             this.datagridnhanvien.TabIndex = 0;
             this.datagridnhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridnhanvien_CellClick);
             // 
-            // nhanvien
+            // FrmQLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +233,7 @@
             this.Controls.Add(this.btnthem);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "nhanvien";
+            this.Name = "FrmQLNhanVien";
             this.Text = "nhanvien";
             this.Load += new System.EventHandler(this.nhanvien_Load);
             this.groupBox1.ResumeLayout(false);

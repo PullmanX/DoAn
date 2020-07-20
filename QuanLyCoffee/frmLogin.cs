@@ -14,7 +14,7 @@ namespace QuanLyCoffee
 {
     public partial class frmLogin : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ECDLIHU;Initial Catalog=QLNV;Integrated Security=True");
         public static string ID_USER = "";
 
         public frmLogin()
@@ -34,7 +34,7 @@ namespace QuanLyCoffee
             try
             {
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Login WHERE MA_NV ='" + username + "' and MAT_KHAU='" + pass + "'", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM NHAN_VIEN WHERE Username ='" + username + "' and Password='" + pass + "'", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

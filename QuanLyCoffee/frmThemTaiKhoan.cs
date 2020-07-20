@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyCoffee
 {
-    public partial class FrmQLNhanVien : Form
+    public partial class frmThemTaiKhoan : Form
     {
-        public FrmQLNhanVien()
+        public frmThemTaiKhoan()
         {
             InitializeComponent();
         }
