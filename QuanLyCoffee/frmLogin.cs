@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +34,7 @@ namespace QuanLyCoffee
             try
             {
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Login WHERE Username ='" + username + "' and Password='" + pass + "'", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Login WHERE MA_NV ='" + username + "' and MAT_KHAU='" + pass + "'", con);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

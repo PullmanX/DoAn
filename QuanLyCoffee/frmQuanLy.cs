@@ -24,9 +24,8 @@ namespace QuanLyCoffee
 
         private void sbtnThongTin_Click(object sender, EventArgs e)
         {
-            frmThongTinNhanVien frm1 = new frmThongTinNhanVien() {Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
-            this.pLoad.Controls.Add(frm1);
-            frm1.Show();
+            FrmQLNhanVien nv = new FrmQLNhanVien();
+            nv.ShowDialog();
         }
 
         private void sbtnExit_Click(object sender, EventArgs e)
