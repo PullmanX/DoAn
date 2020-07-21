@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
             this.pnQuanLy = new System.Windows.Forms.Panel();
+            this.sbtnThongTin = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnExit = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.sbtnLichLam = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,8 +45,6 @@
             this.ptbExit = new DevExpress.XtraEditors.PictureEdit();
             this.ptbSleep = new DevExpress.XtraEditors.PictureEdit();
             this.pLoad = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.sbtnThongTin = new DevExpress.XtraEditors.SimpleButton();
             this.pnQuanLy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
@@ -75,6 +75,22 @@
             this.pnQuanLy.Size = new System.Drawing.Size(222, 542);
             this.pnQuanLy.TabIndex = 2;
             // 
+            // sbtnThongTin
+            // 
+            this.sbtnThongTin.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbtnThongTin.Appearance.ForeColor = System.Drawing.Color.White;
+            this.sbtnThongTin.Appearance.Options.UseFont = true;
+            this.sbtnThongTin.Appearance.Options.UseForeColor = true;
+            this.sbtnThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnThongTin.ImageOptions.SvgImage")));
+            this.sbtnThongTin.Location = new System.Drawing.Point(20, 387);
+            this.sbtnThongTin.Name = "sbtnThongTin";
+            this.sbtnThongTin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.sbtnThongTin.Size = new System.Drawing.Size(119, 28);
+            this.sbtnThongTin.TabIndex = 1;
+            this.sbtnThongTin.TabStop = false;
+            this.sbtnThongTin.Text = "Đăng Xuất";
+            this.sbtnThongTin.Click += new System.EventHandler(this.sbtnExit_Click);
+            // 
             // sbtnExit
             // 
             this.sbtnExit.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,6 +107,14 @@
             this.sbtnExit.Text = "Đăng Xuất";
             this.sbtnExit.Click += new System.EventHandler(this.sbtnExit_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(20, 421);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(110, 1);
+            this.panel1.TabIndex = 0;
+            // 
             // sbtnLichLam
             // 
             this.sbtnLichLam.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,7 +125,7 @@
             this.sbtnLichLam.Location = new System.Drawing.Point(20, 273);
             this.sbtnLichLam.Name = "sbtnLichLam";
             this.sbtnLichLam.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnLichLam.Size = new System.Drawing.Size(119, 28);
+            this.sbtnLichLam.Size = new System.Drawing.Size(143, 28);
             this.sbtnLichLam.TabIndex = 2;
             this.sbtnLichLam.TabStop = false;
             this.sbtnLichLam.Text = "Lịch Làm";
@@ -229,30 +253,6 @@
             this.pLoad.Size = new System.Drawing.Size(713, 504);
             this.pLoad.TabIndex = 3;
             this.pLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.pLoad_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(20, 421);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 1);
-            this.panel1.TabIndex = 0;
-            // 
-            // sbtnThongTin
-            // 
-            this.sbtnThongTin.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sbtnThongTin.Appearance.ForeColor = System.Drawing.Color.White;
-            this.sbtnThongTin.Appearance.Options.UseFont = true;
-            this.sbtnThongTin.Appearance.Options.UseForeColor = true;
-            this.sbtnThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.sbtnThongTin.Location = new System.Drawing.Point(20, 387);
-            this.sbtnThongTin.Name = "sbtnThongTin";
-            this.sbtnThongTin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnThongTin.Size = new System.Drawing.Size(119, 28);
-            this.sbtnThongTin.TabIndex = 1;
-            this.sbtnThongTin.TabStop = false;
-            this.sbtnThongTin.Text = "Đăng Xuất";
-            this.sbtnThongTin.Click += new System.EventHandler(this.sbtnExit_Click);
             // 
             // frmQuanLy
             // 
