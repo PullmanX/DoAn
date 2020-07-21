@@ -184,6 +184,7 @@
             this.sbtnNKHD.TabIndex = 0;
             this.sbtnNKHD.TabStop = false;
             this.sbtnNKHD.Text = "Nhật Ký Hoạt Động";
+            this.sbtnNKHD.Click += new System.EventHandler(this.sbtnNKHD_Click);
             // 
             // pa1
             // 

@@ -10,7 +10,7 @@ namespace QuanLyCoffee
 {
     class ketnoi
     {
-        String chuoiketnoi = "Data Source=DESKTOP-ECDLIHU;Initial Catalog=QLNV;Integrated Security=True";
+        String chuoiketnoi = "Data Source=.\\sqlexpress;Initial Catalog=QLNV;Integrated Security=True";
         public SqlConnection conn;
         SqlCommand cmd;
         SqlDataAdapter da;

@@ -72,5 +72,11 @@ namespace QuanLyCoffee
         {
 
         }
+
+        private void sbtnNKHD_Click(object sender, EventArgs e)
+        {
+            fAdmin f = new fAdmin();
+            f.Show();
+        }
     }
 }
