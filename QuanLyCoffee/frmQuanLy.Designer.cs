@@ -34,8 +34,8 @@
             this.sbtnLichLam = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.sbtnThongTin = new DevExpress.XtraEditors.SimpleButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.sbtnThongTinNhanVien = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.sbtnNKHD = new DevExpress.XtraEditors.SimpleButton();
             this.pa1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,8 +43,8 @@
             this.ptbExit = new DevExpress.XtraEditors.PictureEdit();
             this.ptbSleep = new DevExpress.XtraEditors.PictureEdit();
             this.pLoad = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.sbtnThemTaiKhoan = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.sbtnThongTin = new DevExpress.XtraEditors.SimpleButton();
             this.pnQuanLy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
@@ -57,14 +57,14 @@
             this.pnQuanLy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnQuanLy.BackColor = System.Drawing.Color.Tan;
+            this.pnQuanLy.Controls.Add(this.sbtnThongTin);
             this.pnQuanLy.Controls.Add(this.sbtnExit);
+            this.pnQuanLy.Controls.Add(this.panel1);
             this.pnQuanLy.Controls.Add(this.sbtnLichLam);
             this.pnQuanLy.Controls.Add(this.panel4);
             this.pnQuanLy.Controls.Add(this.panel2);
-            this.pnQuanLy.Controls.Add(this.sbtnThemTaiKhoan);
+            this.pnQuanLy.Controls.Add(this.sbtnThongTinNhanVien);
             this.pnQuanLy.Controls.Add(this.panel3);
-            this.pnQuanLy.Controls.Add(this.sbtnThongTin);
-            this.pnQuanLy.Controls.Add(this.panel1);
             this.pnQuanLy.Controls.Add(this.sbtnNKHD);
             this.pnQuanLy.Controls.Add(this.pa1);
             this.pnQuanLy.Controls.Add(this.pictureBox1);
@@ -82,7 +82,7 @@
             this.sbtnExit.Appearance.Options.UseFont = true;
             this.sbtnExit.Appearance.Options.UseForeColor = true;
             this.sbtnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnExit.ImageOptions.SvgImage")));
-            this.sbtnExit.Location = new System.Drawing.Point(20, 407);
+            this.sbtnExit.Location = new System.Drawing.Point(20, 337);
             this.sbtnExit.Name = "sbtnExit";
             this.sbtnExit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.sbtnExit.Size = new System.Drawing.Size(119, 28);
@@ -98,7 +98,7 @@
             this.sbtnLichLam.Appearance.Options.UseFont = true;
             this.sbtnLichLam.Appearance.Options.UseForeColor = true;
             this.sbtnLichLam.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnLichLam.ImageOptions.SvgImage")));
-            this.sbtnLichLam.Location = new System.Drawing.Point(20, 343);
+            this.sbtnLichLam.Location = new System.Drawing.Point(20, 273);
             this.sbtnLichLam.Name = "sbtnLichLam";
             this.sbtnLichLam.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.sbtnLichLam.Size = new System.Drawing.Size(119, 28);
@@ -109,7 +109,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(20, 441);
+            this.panel4.Location = new System.Drawing.Point(20, 371);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(110, 1);
             this.panel4.TabIndex = 0;
@@ -117,34 +117,34 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(20, 377);
+            this.panel2.Location = new System.Drawing.Point(20, 307);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(110, 1);
             this.panel2.TabIndex = 0;
             // 
-            // sbtnThongTin
+            // sbtnThongTinNhanVien
             // 
-            this.sbtnThongTin.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sbtnThongTin.Appearance.ForeColor = System.Drawing.Color.White;
-            this.sbtnThongTin.Appearance.Options.UseFont = true;
-            this.sbtnThongTin.Appearance.Options.UseForeColor = true;
-            this.sbtnThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnThongTin.ImageOptions.SvgImage")));
-            this.sbtnThongTin.Location = new System.Drawing.Point(20, 222);
-            this.sbtnThongTin.Name = "sbtnThongTin";
-            this.sbtnThongTin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnThongTin.Size = new System.Drawing.Size(180, 28);
-            this.sbtnThongTin.TabIndex = 1;
-            this.sbtnThongTin.TabStop = false;
-            this.sbtnThongTin.Text = "Thông Tin Nhân Viên";
-            this.sbtnThongTin.Click += new System.EventHandler(this.sbtnThongTin_Click);
+            this.sbtnThongTinNhanVien.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbtnThongTinNhanVien.Appearance.ForeColor = System.Drawing.Color.White;
+            this.sbtnThongTinNhanVien.Appearance.Options.UseFont = true;
+            this.sbtnThongTinNhanVien.Appearance.Options.UseForeColor = true;
+            this.sbtnThongTinNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnThongTinNhanVien.ImageOptions.SvgImage")));
+            this.sbtnThongTinNhanVien.Location = new System.Drawing.Point(20, 219);
+            this.sbtnThongTinNhanVien.Name = "sbtnThongTinNhanVien";
+            this.sbtnThongTinNhanVien.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.sbtnThongTinNhanVien.Size = new System.Drawing.Size(180, 28);
+            this.sbtnThongTinNhanVien.TabIndex = 1;
+            this.sbtnThongTinNhanVien.TabStop = false;
+            this.sbtnThongTinNhanVien.Text = "Thông Tin Nhân Viên";
+            this.sbtnThongTinNhanVien.Click += new System.EventHandler(this.sbtnThongTinNhanVien_Click);
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(20, 256);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 1);
-            this.panel1.TabIndex = 0;
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(20, 253);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(180, 1);
+            this.panel3.TabIndex = 0;
             // 
             // sbtnNKHD
             // 
@@ -228,30 +228,31 @@
             this.pLoad.Name = "pLoad";
             this.pLoad.Size = new System.Drawing.Size(713, 504);
             this.pLoad.TabIndex = 3;
+            this.pLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.pLoad_Paint);
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(20, 313);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 1);
-            this.panel3.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(20, 421);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(110, 1);
+            this.panel1.TabIndex = 0;
             // 
-            // sbtnThemTaiKhoan
+            // sbtnThongTin
             // 
-            this.sbtnThemTaiKhoan.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sbtnThemTaiKhoan.Appearance.ForeColor = System.Drawing.Color.White;
-            this.sbtnThemTaiKhoan.Appearance.Options.UseFont = true;
-            this.sbtnThemTaiKhoan.Appearance.Options.UseForeColor = true;
-            this.sbtnThemTaiKhoan.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.sbtnThemTaiKhoan.Location = new System.Drawing.Point(20, 279);
-            this.sbtnThemTaiKhoan.Name = "sbtnThemTaiKhoan";
-            this.sbtnThemTaiKhoan.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnThemTaiKhoan.Size = new System.Drawing.Size(151, 28);
-            this.sbtnThemTaiKhoan.TabIndex = 1;
-            this.sbtnThemTaiKhoan.TabStop = false;
-            this.sbtnThemTaiKhoan.Text = "Thêm Tài Khoản";
-            this.sbtnThemTaiKhoan.Click += new System.EventHandler(this.sbtnThemTaiKhoan_Click);
+            this.sbtnThongTin.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbtnThongTin.Appearance.ForeColor = System.Drawing.Color.White;
+            this.sbtnThongTin.Appearance.Options.UseFont = true;
+            this.sbtnThongTin.Appearance.Options.UseForeColor = true;
+            this.sbtnThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.sbtnThongTin.Location = new System.Drawing.Point(20, 387);
+            this.sbtnThongTin.Name = "sbtnThongTin";
+            this.sbtnThongTin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.sbtnThongTin.Size = new System.Drawing.Size(119, 28);
+            this.sbtnThongTin.TabIndex = 1;
+            this.sbtnThongTin.TabStop = false;
+            this.sbtnThongTin.Text = "Đăng Xuất";
+            this.sbtnThongTin.Click += new System.EventHandler(this.sbtnExit_Click);
             // 
             // frmQuanLy
             // 
@@ -285,16 +286,16 @@
         private System.Windows.Forms.Panel pa1;
         private DevExpress.XtraEditors.SimpleButton sbtnLichLam;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.SimpleButton sbtnThongTin;
         private DevExpress.XtraEditors.SimpleButton sbtnExit;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraEditors.PictureEdit ptbSleep;
         private DevExpress.XtraEditors.PictureEdit ptbExit;
         private System.Windows.Forms.Panel pLoad;
-        private DevExpress.XtraEditors.SimpleButton sbtnThemTaiKhoan;
+        private DevExpress.XtraEditors.SimpleButton sbtnThongTinNhanVien;
         private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraEditors.SimpleButton sbtnThongTin;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

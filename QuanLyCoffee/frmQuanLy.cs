@@ -22,7 +22,7 @@ namespace QuanLyCoffee
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wnsg, int wparam, int lparam);
 
-        private void sbtnThongTin_Click(object sender, EventArgs e)
+        private void sbtnThongTinNhanVien_Click(object sender, EventArgs e)
         {
             frmThongTinNhanVien nv = new frmThongTinNhanVien();
             nv.ShowDialog();
@@ -66,11 +66,11 @@ namespace QuanLyCoffee
                 Close();
         }
 
+        
 
-        private void sbtnThemTaiKhoan_Click(object sender, EventArgs e)
+        private void pLoad_Paint(object sender, PaintEventArgs e)
         {
-            frmThemTaiKhoan f = new frmThemTaiKhoan();
-            f.ShowDialog();
+
         }
     }
 }
