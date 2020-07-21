@@ -16,6 +16,7 @@ namespace QuanLyCoffee
         {
             InitializeComponent();
         }
+
         ketnoi kn = new ketnoi();
         private void btncapnhat_Click(object sender, EventArgs e)
         {

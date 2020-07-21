@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyCoffee", "QuanLyCoffee\QuanLyCoffee.csproj", "{115191CB-9C06-4325-9519-77983FCE9336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bussiness", "Bussiness\Bussiness.csproj", "{F642FAB2-1B35-4A56-8659-4B06180506E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +17,15 @@ Global
 		{115191CB-9C06-4325-9519-77983FCE9336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{115191CB-9C06-4325-9519-77983FCE9336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{115191CB-9C06-4325-9519-77983FCE9336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F642FAB2-1B35-4A56-8659-4B06180506E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F642FAB2-1B35-4A56-8659-4B06180506E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F642FAB2-1B35-4A56-8659-4B06180506E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F642FAB2-1B35-4A56-8659-4B06180506E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66E54B8D-5697-4F51-A891-6C76781EA5BD}
 	EndGlobalSection
 EndGlobal
