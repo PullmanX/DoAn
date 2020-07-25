@@ -183,7 +183,7 @@
             this.button12.Cursor = System.Windows.Forms.Cursors.No;
             this.button12.Location = new System.Drawing.Point(671, 14);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(70, 55);
+            this.button12.Size = new System.Drawing.Size(87, 55);
             this.button12.TabIndex = 4;
             this.button12.UseVisualStyleBackColor = true;
             // 
