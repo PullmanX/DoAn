@@ -39,12 +39,12 @@ namespace QuanLyCoffee
         {
             dtgvFood.DataSource = foodList;
             dtgvAccount.DataSource = accountList;
-            dtgvLichlam.DataSource = lichlamList;
+            //dtgvLichlam.DataSource = lichlamList;
             LoadDateTimePickerBill();
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
             LoadListFood();
             LoadAccount();
-            LoadLichlam();
+            //LoadLichlam();
             LoadCategoryIntoCombobox(cbFoodCategory);
             AddFoodBinding();
             AddAccountBinding();
@@ -80,7 +80,7 @@ namespace QuanLyCoffee
 
         void LoadListLichlam()
         {
-            lichlamList.DataSource = LichlamDAO.Instance.GetListLichlam();
+            //lichlamList.DataSource = LichlamDAO.Instance.GetListLichlam();
         }
 
         void AddFoodBinding()

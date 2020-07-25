@@ -171,8 +171,26 @@
       <DependentUpon>fTableManager.cs</DependentUpon>
     </Compile>
     <Compile Include="ketnoi.cs" />
+    <Compile Include="Lichlam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lichlam.Designer.cs">
+      <DependentUpon>Lichlam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phieunhap.Designer.cs">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XLichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XLichLam.Designer.cs">
+      <DependentUpon>XLichLam.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,11 +224,20 @@
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lichlam.resx">
+      <DependentUpon>Lichlam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phieunhap.resx">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XLichLam.resx">
+      <DependentUpon>XLichLam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

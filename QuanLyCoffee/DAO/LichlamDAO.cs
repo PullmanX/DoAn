@@ -1,4 +1,4 @@
-﻿using QuanLyCoffee.DTO;
+﻿/*using QuanLyCoffee.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -62,6 +62,7 @@ namespace QuanLyCoffee.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
-        }*/
+        }
     }
 }
+*/
