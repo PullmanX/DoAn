@@ -87,6 +87,7 @@
     <Compile Include="DAO\CategoryDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DAO\LichlamDAO.cs" />
     <Compile Include="DAO\MenuDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
     <Compile Include="DTO\Account.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="DTO\BillInfo.cs" />
     <Compile Include="DTO\Category.cs" />
     <Compile Include="DTO\Food.cs" />
+    <Compile Include="DTO\Lichlam.cs" />
     <Compile Include="DTO\Menu.cs" />
     <Compile Include="DTO\Table.cs" />
     <Compile Include="fAccountProfile.cs">
@@ -119,6 +121,12 @@
     </Compile>
     <Compile Include="frmKhuVuc.Designer.cs">
       <DependentUpon>frmKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLichlam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLichlam.Designer.cs">
+      <DependentUpon>FrmLichlam.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>

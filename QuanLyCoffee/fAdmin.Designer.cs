@@ -118,7 +118,18 @@
             this.btnFristBillPage = new System.Windows.Forms.Button();
             this.dtgvBill = new System.Windows.Forms.DataGridView();
             this.tcAdmin = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tpLichlam = new System.Windows.Forms.TabPage();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.txbTen = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.dtgvLichlam = new System.Windows.Forms.DataGridView();
             this.USP_GetListBillByDateForReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tpAccount.SuspendLayout();
             this.panel23.SuspendLayout();
@@ -160,6 +171,12 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
             this.tcAdmin.SuspendLayout();
+            this.tpLichlam.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel35.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvLichlam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.USP_GetListBillByDateForReportBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,7 +188,7 @@
             this.tpAccount.Location = new System.Drawing.Point(4, 22);
             this.tpAccount.Name = "tpAccount";
             this.tpAccount.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAccount.Size = new System.Drawing.Size(650, 413);
+            this.tpAccount.Size = new System.Drawing.Size(821, 418);
             this.tpAccount.TabIndex = 4;
             this.tpAccount.Text = "Tài khoản";
             this.tpAccount.UseVisualStyleBackColor = true;
@@ -355,9 +372,9 @@
             this.tpTable.Location = new System.Drawing.Point(4, 22);
             this.tpTable.Name = "tpTable";
             this.tpTable.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTable.Size = new System.Drawing.Size(650, 413);
+            this.tpTable.Size = new System.Drawing.Size(821, 418);
             this.tpTable.TabIndex = 3;
-            this.tpTable.Text = "Bàn ăn";
+            this.tpTable.Text = "Bàn";
             this.tpTable.UseVisualStyleBackColor = true;
             // 
             // panel11
@@ -521,7 +538,7 @@
             this.tbFoodCategory.Location = new System.Drawing.Point(4, 22);
             this.tbFoodCategory.Name = "tbFoodCategory";
             this.tbFoodCategory.Padding = new System.Windows.Forms.Padding(3);
-            this.tbFoodCategory.Size = new System.Drawing.Size(650, 413);
+            this.tbFoodCategory.Size = new System.Drawing.Size(821, 418);
             this.tbFoodCategory.TabIndex = 2;
             this.tbFoodCategory.Text = "Danh mục";
             this.tbFoodCategory.UseVisualStyleBackColor = true;
@@ -660,9 +677,9 @@
             this.tpFood.Location = new System.Drawing.Point(4, 22);
             this.tpFood.Name = "tpFood";
             this.tpFood.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFood.Size = new System.Drawing.Size(650, 413);
+            this.tpFood.Size = new System.Drawing.Size(821, 418);
             this.tpFood.TabIndex = 1;
-            this.tpFood.Text = "Thức ăn";
+            this.tpFood.Text = "Nước uống";
             this.tpFood.UseVisualStyleBackColor = true;
             // 
             // panel6
@@ -888,7 +905,7 @@
             this.tpBill.Location = new System.Drawing.Point(4, 22);
             this.tpBill.Name = "tpBill";
             this.tpBill.Padding = new System.Windows.Forms.Padding(3);
-            this.tpBill.Size = new System.Drawing.Size(650, 413);
+            this.tpBill.Size = new System.Drawing.Size(821, 418);
             this.tpBill.TabIndex = 0;
             this.tpBill.Text = "Doanh thu";
             this.tpBill.UseVisualStyleBackColor = true;
@@ -1007,28 +1024,128 @@
             this.tcAdmin.Controls.Add(this.tbFoodCategory);
             this.tcAdmin.Controls.Add(this.tpTable);
             this.tcAdmin.Controls.Add(this.tpAccount);
-            this.tcAdmin.Controls.Add(this.tabPage1);
+            this.tcAdmin.Controls.Add(this.tpLichlam);
             this.tcAdmin.Location = new System.Drawing.Point(12, 12);
             this.tcAdmin.Name = "tcAdmin";
             this.tcAdmin.SelectedIndex = 0;
-            this.tcAdmin.Size = new System.Drawing.Size(658, 439);
+            this.tcAdmin.Size = new System.Drawing.Size(829, 444);
             this.tcAdmin.TabIndex = 0;
             // 
-            // tabPage1
+            // tpLichlam
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(650, 413);
-            this.tabPage1.TabIndex = 5;
-            this.tabPage1.Text = "Report";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tpLichlam.Controls.Add(this.panel24);
+            this.tpLichlam.Controls.Add(this.panel34);
+            this.tpLichlam.Controls.Add(this.panel35);
+            this.tpLichlam.Location = new System.Drawing.Point(4, 22);
+            this.tpLichlam.Name = "tpLichlam";
+            this.tpLichlam.Padding = new System.Windows.Forms.Padding(3);
+            this.tpLichlam.Size = new System.Drawing.Size(821, 418);
+            this.tpLichlam.TabIndex = 6;
+            this.tpLichlam.Text = "Lịch làm";
+            this.tpLichlam.UseVisualStyleBackColor = true;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.panel32);
+            this.panel24.Location = new System.Drawing.Point(313, 283);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(285, 51);
+            this.panel24.TabIndex = 6;
+            // 
+            // panel32
+            // 
+            this.panel32.Controls.Add(this.txbTen);
+            this.panel32.Controls.Add(this.label15);
+            this.panel32.Location = new System.Drawing.Point(3, 4);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(279, 44);
+            this.panel32.TabIndex = 2;
+            // 
+            // txbTen
+            // 
+            this.txbTen.Location = new System.Drawing.Point(91, 8);
+            this.txbTen.Name = "txbTen";
+            this.txbTen.Size = new System.Drawing.Size(185, 20);
+            this.txbTen.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label15.Location = new System.Drawing.Point(3, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(70, 19);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Tên NV:";
+            // 
+            // panel34
+            // 
+            this.panel34.Controls.Add(this.button2);
+            this.panel34.Controls.Add(this.btnSua);
+            this.panel34.Controls.Add(this.btnXoa);
+            this.panel34.Controls.Add(this.btnThem);
+            this.panel34.Location = new System.Drawing.Point(90, 7);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(712, 52);
+            this.panel34.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(246, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 46);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Xem";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(165, 3);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 46);
+            this.btnSua.TabIndex = 2;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(84, 3);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 46);
+            this.btnXoa.TabIndex = 1;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(3, 3);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 46);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // panel35
+            // 
+            this.panel35.Controls.Add(this.dtgvLichlam);
+            this.panel35.Location = new System.Drawing.Point(90, 65);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(725, 198);
+            this.panel35.TabIndex = 4;
+            // 
+            // dtgvLichlam
+            // 
+            this.dtgvLichlam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvLichlam.Location = new System.Drawing.Point(3, 3);
+            this.dtgvLichlam.Name = "dtgvLichlam";
+            this.dtgvLichlam.Size = new System.Drawing.Size(709, 185);
+            this.dtgvLichlam.TabIndex = 0;
             // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 505);
+            this.ClientSize = new System.Drawing.Size(891, 476);
             this.Controls.Add(this.tcAdmin);
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1088,6 +1205,13 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();
             this.tcAdmin.ResumeLayout(false);
+            this.tpLichlam.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel35.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvLichlam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USP_GetListBillByDateForReportBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -1184,10 +1308,20 @@
         private System.Windows.Forms.Button btnFristBillPage;
         private System.Windows.Forms.DataGridView dtgvBill;
         private System.Windows.Forms.TabControl tcAdmin;
-        private System.Windows.Forms.TabPage tabPage1;
         //private Microsoft.Reporting.WinForms.ReportViewer rpViewer;
         // private System.Windows.Forms.BindingSource USP_GetTableListBindingSource;
         private System.Windows.Forms.BindingSource USP_GetListBillByDateForReportBindingSource;
-
+        private System.Windows.Forms.TabPage tpLichlam;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.TextBox txbTen;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.DataGridView dtgvLichlam;
     }
 }

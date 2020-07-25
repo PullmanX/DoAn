@@ -72,8 +72,9 @@ namespace QuanLyCoffee
                     case "Trống":
                         btn.BackColor = Color.Aqua;
                         break;
+                    
                     default:
-                        btn.BackColor = Color.LightPink;
+                        btn.BackColor = Color.Chartreuse;
                         break;
                 }
 
@@ -257,8 +258,8 @@ namespace QuanLyCoffee
             }
         }
 
-        #endregion        
 
+        #endregion
 
     }
 }
