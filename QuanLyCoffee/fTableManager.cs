@@ -16,18 +16,18 @@ namespace QuanLyCoffee
 {
     public partial class fTableManager : Form
     {
-        private Account loginAccount;
+       // private Account loginAccount;
 
-        public Account LoginAccount
+       /* public Account LoginAccount
         {
             get { return loginAccount; }
             set { loginAccount = value; ChangeAccount(loginAccount.Type); }
-        }
-        public fTableManager(Account acc)
+        }*/
+        public fTableManager()
         {
             InitializeComponent();
 
-            this.LoginAccount = acc;
+           // this.LoginAccount = acc;
 
             LoadTable();
             LoadCategory();
@@ -36,11 +36,11 @@ namespace QuanLyCoffee
 
         #region Method
 
-        void ChangeAccount(int type)
+        /*void ChangeAccount(int type)
         {
             adminToolStripMenuItem.Enabled = type == 1;
             thôngTinTàiKhoảnToolStripMenuItem.Text += " (" + LoginAccount.DisplayName + ")";
-        }
+        }*/
         void LoadCategory()
         {
             List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
@@ -72,7 +72,6 @@ namespace QuanLyCoffee
                     case "Trống":
                         btn.BackColor = Color.Aqua;
                         break;
-                    
                     default:
                         btn.BackColor = Color.Chartreuse;
                         break;
@@ -136,7 +135,7 @@ namespace QuanLyCoffee
             this.Close();
         }
 
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+       /* private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAccountProfile f = new fAccountProfile(LoginAccount);
             f.UpdateAccount += f_UpdateAccount;
@@ -146,15 +145,12 @@ namespace QuanLyCoffee
         void f_UpdateAccount(object sender, AccountEvent e)
         {
             thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản (" + e.Acc.DisplayName + ")";
-        }
+        }*/
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fAdmin f = new fAdmin();
-            f.loginAccount = LoginAccount;
-            f.InsertFood += f_InsertFood;
-            f.DeleteFood += f_DeleteFood;
-            f.UpdateFood += f_UpdateFood;
+            XLichLam f = new XLichLam();
+           
             f.ShowDialog();
         }
 
@@ -261,5 +257,9 @@ namespace QuanLyCoffee
 
         #endregion
 
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

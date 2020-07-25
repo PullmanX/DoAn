@@ -38,8 +38,7 @@ namespace QuanLyCoffee
         void LoadData()
         {
             dtgvFood.DataSource = foodList;
-            dtgvAccount.DataSource = accountList;
-            //dtgvLichlam.DataSource = lichlamList;
+            //dtgvAccount.DataSource = accountList;
             LoadDateTimePickerBill();
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
             LoadListFood();
@@ -47,17 +46,15 @@ namespace QuanLyCoffee
             //LoadLichlam();
             LoadCategoryIntoCombobox(cbFoodCategory);
             AddFoodBinding();
-            AddAccountBinding();
-            AddLichlamBinding();
-
+           // AddAccountBinding();
         }
 
-        void AddAccountBinding()
+        /*void AddAccountBinding()
         {
             txbUserName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "UserName", true, DataSourceUpdateMode.Never));
             txbDisplayName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "DisplayName", true, DataSourceUpdateMode.Never));
             numericUpDown1.DataBindings.Add(new Binding("Value", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
-        }
+        }*/
         void LoadAccount()
         {
             accountList.DataSource = AccountDAO.Instance.GetListAccount();
@@ -73,15 +70,7 @@ namespace QuanLyCoffee
             dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
         }
 
-        void AddLichlamBinding()
-        {
-            txbTen.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "Name", true, DataSourceUpdateMode.Never));
-        }
-
-        void LoadListLichlam()
-        {
-            //lichlamList.DataSource = LichlamDAO.Instance.GetListLichlam();
-        }
+    
 
         void AddFoodBinding()
         {
@@ -161,7 +150,7 @@ namespace QuanLyCoffee
         #endregion
 
         #region events
-        private void btnAddAccount_Click(object sender, EventArgs e)
+       /* private void btnAddAccount_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
             string displayName = txbDisplayName.Text;
@@ -198,7 +187,7 @@ namespace QuanLyCoffee
         private void btnShowAccount_Click(object sender, EventArgs e)
         {
             LoadAccount();
-        }
+        }*/
 
 
         private void btnSearchFood_Click(object sender, EventArgs e)
@@ -372,6 +361,11 @@ namespace QuanLyCoffee
            // this.USP_GetListBillByDateForReportTableAdapter.Fill(this.QuanLyQuanCafeDataSet2.USP_GetListBillByDateForReport, dtpkFromDate.Value, dtpkToDate.Value);
 
             //this.rpViewer.RefreshReport();
+        }
+
+        private void dtpkToDate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

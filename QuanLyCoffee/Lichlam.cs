@@ -54,22 +54,6 @@ namespace QuanLyCoffee
             btnHuy.Enabled = hien;
         }
 
-        /*private void Phieunhap_Load(object sender, EventArgs e)
-        {
-            //Tạo đối tượng Connection
-            con = new SqlConnection();
-            //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
-            //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
-
-            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
-            LoadDuLieu("Select * from PHIEUNHAP");
-            //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            //An groupbox chi tiet
-            HienChiTiet(false);
-        }*/
-
 
         private void dtgView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -110,12 +94,25 @@ namespace QuanLyCoffee
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-
+            lblTieuDe.Text = "SỮA THÔNG TIN LỊCH LÀM";
+            txtCalam.Enabled = true;
+            txtThu2.Enabled = true;
+            txtThu3.Enabled = true;
+            txtThu4.Enabled = true;
+            txtThu5.Enabled = true;
+            txtThu6.Enabled = true;
+            txtThu7.Enabled = true;
+            txtCN.Enabled = true;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            lblTieuDe.Text = "XÓA THÔNG TIN LỊCH LÀM ";
+            btnSua.Enabled = false;
+            btnThem.Enabled = false;
+            btnLuu.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -126,15 +123,15 @@ namespace QuanLyCoffee
                 con.Open();
             //Chúng ta sử dụng control ErrorProvider để hiển thị lỗi
             //Kiểm tra tên sản phầm có bị để trống không
-            /*  if (txtTenHang.Text.Trim() == "")
+            if (txtCalam.Text.Trim() == "")
               {
-                  errChiTiet.SetError(txtTenHang, "Bạn không để trống tên sản phẩm!");
+                  errChiTiet.SetError(txtCalam, "Bạn không để trống tên sản phẩm!");
                   return;
               }
               else
               {
                   errChiTiet.Clear();
-              }*/
+              }
             //Insert vao CSDL
             sql = "INSERT INTO LICHLAM(Calam, Thu2,Thu3,Thu4,Thu5,Thu6,Thu7,CN)VALUES (";
             sql += "N'" + txtCalam.Text + "',N'" + txtThu2.Text + "',N'" + txtThu3.Text + "',N'" + txtThu4.Text + "',N'" + txtThu5.Text + "',N'" + txtThu6.Text + "',N'" + txtThu7.Text + "',N'" + txtCN.Text + "')";

@@ -30,9 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
             this.pnQuanLy = new System.Windows.Forms.Panel();
-            this.sbtnThongTin = new DevExpress.XtraEditors.SimpleButton();
+            this.sbtnTKNV = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnExit = new DevExpress.XtraEditors.SimpleButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.sbtnLichLam = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -41,15 +40,10 @@
             this.sbtnNKHD = new DevExpress.XtraEditors.SimpleButton();
             this.pa1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.ptbExit = new DevExpress.XtraEditors.PictureEdit();
-            this.ptbSleep = new DevExpress.XtraEditors.PictureEdit();
             this.pLoad = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnQuanLy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbSleep.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnQuanLy
@@ -57,9 +51,9 @@
             this.pnQuanLy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnQuanLy.BackColor = System.Drawing.Color.Tan;
-            this.pnQuanLy.Controls.Add(this.sbtnThongTin);
-            this.pnQuanLy.Controls.Add(this.sbtnExit);
             this.pnQuanLy.Controls.Add(this.panel1);
+            this.pnQuanLy.Controls.Add(this.sbtnTKNV);
+            this.pnQuanLy.Controls.Add(this.sbtnExit);
             this.pnQuanLy.Controls.Add(this.sbtnLichLam);
             this.pnQuanLy.Controls.Add(this.panel4);
             this.pnQuanLy.Controls.Add(this.panel2);
@@ -75,21 +69,21 @@
             this.pnQuanLy.Size = new System.Drawing.Size(222, 542);
             this.pnQuanLy.TabIndex = 2;
             // 
-            // sbtnThongTin
+            // sbtnTKNV
             // 
-            this.sbtnThongTin.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sbtnThongTin.Appearance.ForeColor = System.Drawing.Color.White;
-            this.sbtnThongTin.Appearance.Options.UseFont = true;
-            this.sbtnThongTin.Appearance.Options.UseForeColor = true;
-            this.sbtnThongTin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnThongTin.ImageOptions.SvgImage")));
-            this.sbtnThongTin.Location = new System.Drawing.Point(20, 387);
-            this.sbtnThongTin.Name = "sbtnThongTin";
-            this.sbtnThongTin.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnThongTin.Size = new System.Drawing.Size(119, 28);
-            this.sbtnThongTin.TabIndex = 1;
-            this.sbtnThongTin.TabStop = false;
-            this.sbtnThongTin.Text = "Đăng Xuất";
-            this.sbtnThongTin.Click += new System.EventHandler(this.sbtnExit_Click);
+            this.sbtnTKNV.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbtnTKNV.Appearance.ForeColor = System.Drawing.Color.White;
+            this.sbtnTKNV.Appearance.Options.UseFont = true;
+            this.sbtnTKNV.Appearance.Options.UseForeColor = true;
+            this.sbtnTKNV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnThongTin.ImageOptions.SvgImage")));
+            this.sbtnTKNV.Location = new System.Drawing.Point(20, 276);
+            this.sbtnTKNV.Name = "sbtnTKNV";
+            this.sbtnTKNV.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.sbtnTKNV.Size = new System.Drawing.Size(180, 28);
+            this.sbtnTKNV.TabIndex = 1;
+            this.sbtnTKNV.TabStop = false;
+            this.sbtnTKNV.Text = "Tài Khoản Nhan Vien";
+            this.sbtnTKNV.Click += new System.EventHandler(this.sbtnTKNV_Click);
             // 
             // sbtnExit
             // 
@@ -98,7 +92,7 @@
             this.sbtnExit.Appearance.Options.UseFont = true;
             this.sbtnExit.Appearance.Options.UseForeColor = true;
             this.sbtnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnExit.ImageOptions.SvgImage")));
-            this.sbtnExit.Location = new System.Drawing.Point(20, 337);
+            this.sbtnExit.Location = new System.Drawing.Point(20, 401);
             this.sbtnExit.Name = "sbtnExit";
             this.sbtnExit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.sbtnExit.Size = new System.Drawing.Size(119, 28);
@@ -107,14 +101,6 @@
             this.sbtnExit.Text = "Đăng Xuất";
             this.sbtnExit.Click += new System.EventHandler(this.sbtnExit_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(20, 421);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 1);
-            this.panel1.TabIndex = 0;
-            // 
             // sbtnLichLam
             // 
             this.sbtnLichLam.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,18 +108,19 @@
             this.sbtnLichLam.Appearance.Options.UseFont = true;
             this.sbtnLichLam.Appearance.Options.UseForeColor = true;
             this.sbtnLichLam.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnLichLam.ImageOptions.SvgImage")));
-            this.sbtnLichLam.Location = new System.Drawing.Point(20, 273);
+            this.sbtnLichLam.Location = new System.Drawing.Point(20, 339);
             this.sbtnLichLam.Name = "sbtnLichLam";
             this.sbtnLichLam.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.sbtnLichLam.Size = new System.Drawing.Size(143, 28);
+            this.sbtnLichLam.Size = new System.Drawing.Size(119, 28);
             this.sbtnLichLam.TabIndex = 2;
             this.sbtnLichLam.TabStop = false;
             this.sbtnLichLam.Text = "Lịch Làm";
+            this.sbtnLichLam.Click += new System.EventHandler(this.sbtnLichLam_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(20, 371);
+            this.panel4.Location = new System.Drawing.Point(20, 435);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(110, 1);
             this.panel4.TabIndex = 0;
@@ -141,7 +128,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(20, 307);
+            this.panel2.Location = new System.Drawing.Point(20, 373);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(110, 1);
             this.panel2.TabIndex = 0;
@@ -205,55 +192,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.panel6.Controls.Add(this.ptbExit);
-            this.panel6.Controls.Add(this.ptbSleep);
-            this.panel6.Location = new System.Drawing.Point(222, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(713, 34);
-            this.panel6.TabIndex = 4;
-            this.panel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDown);
-            // 
-            // ptbExit
-            // 
-            this.ptbExit.EditValue = ((object)(resources.GetObject("ptbExit.EditValue")));
-            this.ptbExit.Location = new System.Drawing.Point(679, 0);
-            this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.ptbExit.Properties.Appearance.Options.UseBackColor = true;
-            this.ptbExit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.ptbExit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.ptbExit.Size = new System.Drawing.Size(34, 35);
-            this.ptbExit.TabIndex = 36;
-            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
-            // 
-            // ptbSleep
-            // 
-            this.ptbSleep.EditValue = ((object)(resources.GetObject("ptbSleep.EditValue")));
-            this.ptbSleep.Location = new System.Drawing.Point(639, 0);
-            this.ptbSleep.Name = "ptbSleep";
-            this.ptbSleep.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.ptbSleep.Properties.Appearance.Options.UseBackColor = true;
-            this.ptbSleep.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.ptbSleep.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.ptbSleep.Size = new System.Drawing.Size(34, 35);
-            this.ptbSleep.TabIndex = 36;
-            this.ptbSleep.Click += new System.EventHandler(this.ptbSleep_Click);
-            // 
             // pLoad
             // 
             this.pLoad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pLoad.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pLoad.Location = new System.Drawing.Point(222, 37);
+            this.pLoad.BackgroundImage = global::QuanLyCoffee.Properties.Resources.the_art_of_coffee_logo_cover_;
+            this.pLoad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pLoad.Location = new System.Drawing.Point(222, 0);
             this.pLoad.Name = "pLoad";
-            this.pLoad.Size = new System.Drawing.Size(713, 504);
+            this.pLoad.Size = new System.Drawing.Size(713, 542);
             this.pLoad.TabIndex = 3;
             this.pLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.pLoad_Paint);
+            this.pLoad.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLoad_MouseDown);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(20, 310);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(180, 1);
+            this.panel1.TabIndex = 3;
             // 
             // frmQuanLy
             // 
@@ -262,7 +221,6 @@
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 542);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.pLoad);
             this.Controls.Add(this.pnQuanLy);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -272,9 +230,6 @@
             this.Load += new System.EventHandler(this.frmQuanLy_Load);
             this.pnQuanLy.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbSleep.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,13 +244,10 @@
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton sbtnExit;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.PictureEdit ptbSleep;
-        private DevExpress.XtraEditors.PictureEdit ptbExit;
         private System.Windows.Forms.Panel pLoad;
         private DevExpress.XtraEditors.SimpleButton sbtnThongTinNhanVien;
         private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.SimpleButton sbtnThongTin;
+        private DevExpress.XtraEditors.SimpleButton sbtnTKNV;
         private System.Windows.Forms.Panel panel1;
     }
 }

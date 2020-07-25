@@ -59,7 +59,7 @@ namespace QuanLyCoffee
             ID_USER = getID(txtTaiKhoan.Text, txtMatKhau.Text);
             if (ID_USER == "Admin" )
             {
-                frmQuanLy fmain = new frmQuanLy();
+                fAdmin fmain = new fAdmin();
                 fmain.Show();
                 this.Hide();
             }

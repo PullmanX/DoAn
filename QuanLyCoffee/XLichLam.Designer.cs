@@ -40,7 +40,7 @@
             this.lblTieuDe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTieuDe.AutoSize = true;
             this.lblTieuDe.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieuDe.Location = new System.Drawing.Point(278, 25);
+            this.lblTieuDe.Location = new System.Drawing.Point(354, 46);
             this.lblTieuDe.Name = "lblTieuDe";
             this.lblTieuDe.Size = new System.Drawing.Size(244, 31);
             this.lblTieuDe.TabIndex = 14;
@@ -50,9 +50,9 @@
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.dgvKetQua);
-            this.groupBox2.Location = new System.Drawing.Point(85, 59);
+            this.groupBox2.Location = new System.Drawing.Point(56, 80);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(661, 238);
+            this.groupBox2.Size = new System.Drawing.Size(884, 348);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết lịch làm";
@@ -61,16 +61,16 @@
             // 
             this.dgvKetQua.BackgroundColor = System.Drawing.Color.White;
             this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKetQua.Location = new System.Drawing.Point(13, 32);
+            this.dgvKetQua.Location = new System.Drawing.Point(16, 36);
             this.dgvKetQua.Name = "dgvKetQua";
-            this.dgvKetQua.Size = new System.Drawing.Size(642, 184);
+            this.dgvKetQua.Size = new System.Drawing.Size(850, 276);
             this.dgvKetQua.TabIndex = 0;
             // 
             // XLichLam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(952, 493);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.groupBox2);
             this.Name = "XLichLam";

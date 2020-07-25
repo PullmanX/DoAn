@@ -394,6 +394,16 @@ namespace QuanLyCoffee.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap the_art_of_coffee_logo_cover_ {
+            get {
+                object obj = ResourceManager.GetObject("the-art-of-coffee-logo-cover-", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ts_chocolate {
             get {
                 object obj = ResourceManager.GetObject("ts chocolate", resourceCulture);

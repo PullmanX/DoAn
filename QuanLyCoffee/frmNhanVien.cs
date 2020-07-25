@@ -19,7 +19,7 @@ namespace QuanLyCoffee
 
         private void mntThoat_Click(object sender, EventArgs e)
         {
-            frmLogin frm = new frmLogin();
+            fLogin frm = new fLogin();
             frm.Show();
             this.Close();
         }
@@ -31,9 +31,9 @@ namespace QuanLyCoffee
 
         private void mntNKHD_Click(object sender, EventArgs e)
         {
-            frmMenu frmmn = new frmMenu();
+            fTableManager frmmn = new fTableManager();
             frmmn.Show();
-            this.Close();
+        
         }
 
         private void frmNhanVien_Load(object sender, EventArgs e)
@@ -43,8 +43,14 @@ namespace QuanLyCoffee
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            frmMenu frmmn = new frmMenu();
+            fTableManager frmmn = new fTableManager();
             frmmn.Show();
+        }
+
+        private void mntXemLL_Click(object sender, EventArgs e)
+        {
+            XLichLam xll = new XLichLam();
+            xll.Show();
         }
     }
 }

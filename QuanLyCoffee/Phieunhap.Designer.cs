@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvKetQua = new System.Windows.Forms.DataGridView();
@@ -45,9 +46,14 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtTenHang = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.errChiTiet = new System.Windows.Forms.ErrorProvider(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errChiTiet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTieuDe
@@ -80,11 +86,13 @@
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.Size = new System.Drawing.Size(605, 167);
             this.dgvKetQua.TabIndex = 0;
+            this.dgvKetQua.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgView1_CellContentClick);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.txtMaHang);
+            this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.pa1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnThoat);
@@ -108,17 +116,17 @@
             // 
             this.txtMaHang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaHang.Enabled = false;
-            this.txtMaHang.Location = new System.Drawing.Point(94, 48);
+            this.txtMaHang.Location = new System.Drawing.Point(70, 48);
             this.txtMaHang.Name = "txtMaHang";
-            this.txtMaHang.Size = new System.Drawing.Size(98, 20);
+            this.txtMaHang.Size = new System.Drawing.Size(122, 20);
             this.txtMaHang.TabIndex = 16;
             // 
             // pa1
             // 
             this.pa1.BackColor = System.Drawing.Color.Black;
-            this.pa1.Location = new System.Drawing.Point(198, 48);
+            this.pa1.Location = new System.Drawing.Point(202, 48);
             this.pa1.Name = "pa1";
-            this.pa1.Size = new System.Drawing.Size(1, 55);
+            this.pa1.Size = new System.Drawing.Size(1, 20);
             this.pa1.TabIndex = 35;
             // 
             // label1
@@ -147,7 +155,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(214, 51);
+            this.label3.Location = new System.Drawing.Point(458, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 13;
@@ -187,12 +195,13 @@
             this.btnXoa.TabStop = false;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(214, 80);
+            this.label4.Location = new System.Drawing.Point(218, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 15;
@@ -201,13 +210,14 @@
             // btnSua
             // 
             this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSua.Location = new System.Drawing.Point(165, 132);
+            this.btnSua.Location = new System.Drawing.Point(170, 132);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(51, 28);
             this.btnSua.TabIndex = 31;
             this.btnSua.TabStop = false;
             this.btnSua.Text = "Sữa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -225,19 +235,31 @@
             // 
             this.txtSoLuong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSoLuong.Enabled = false;
-            this.txtSoLuong.Location = new System.Drawing.Point(287, 48);
+            this.txtSoLuong.Location = new System.Drawing.Point(520, 48);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(142, 20);
+            this.txtSoLuong.Size = new System.Drawing.Size(87, 20);
             this.txtSoLuong.TabIndex = 18;
             // 
             // txtTenHang
             // 
             this.txtTenHang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTenHang.Enabled = false;
-            this.txtTenHang.Location = new System.Drawing.Point(287, 77);
+            this.txtTenHang.Location = new System.Drawing.Point(291, 48);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.Size = new System.Drawing.Size(142, 20);
             this.txtTenHang.TabIndex = 24;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(451, 48);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 20);
+            this.panel1.TabIndex = 35;
+            // 
+            // errChiTiet
+            // 
+            this.errChiTiet.ContainerControl = this;
             // 
             // Phieunhap
             // 
@@ -254,6 +276,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errChiTiet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,5 +302,8 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.TextBox txtTenHang;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ErrorProvider errChiTiet;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

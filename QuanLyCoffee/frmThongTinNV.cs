@@ -104,13 +104,23 @@ namespace QuanLyCoffee
 
 
         private void btnSua_Click(object sender, EventArgs e)
-        {                       
-
+        {
+            lblTieuDe.Text = "SỮA THÔNG TIN NHÂN VIÊN";
+            txtTenNV.Enabled = true;
+            txtDiaChi.Enabled = true;
+            cboGioiTinh.Enabled = true;
+            txtSDT.Enabled = true;
+            dtpNgSinh.Enabled = true;
+            btnXoa.Enabled = false;
+            btnLuu.Enabled = true;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            
+            lblTieuDe.Text = "XÓA THÔNG TIN NHÂN VIÊN";
+            btnSua.Enabled = false;
+            btnThem.Enabled = false;
+            btnLuu.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -136,19 +146,22 @@ namespace QuanLyCoffee
             //Nếu nút Sửa enable thì thực hiện cập nhật dữ liệu
             if (btnSua.Enabled == true)
             {
+                MessageBox.Show("Đang sửa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 sql = "Update NHANVIEN SET ";
-                sql += "TenSP = N'" + txtTenNV.Text + "',";
-                sql += "NgaySinh = '" + dtpNgSinh.Value + "',";
+                sql += "TenNV = N'" + txtTenNV.Text + "',";
+                sql += "NgSinh = '" + dtpNgSinh.Value + "',";
                 sql += "GioiTinh = '" + cboGioiTinh.Text + "',";
-                sql += "DiaChi = N'" + txtDiaChi.Text + "' ";
+                sql += "DiaChi = N'" + txtDiaChi.Text + "', ";
                 sql += "SDT = N'" + txtSDT.Text + "' ";
-                sql += "Where MaSP = N'" + txtMaNV.Text + "'";
+                sql += "Where MaNV = N'" + txtMaNV.Text + "'";
 
             }
             //Nếu nút Xóa enable thì thực hiện xóa dữ liệu
             if (btnXoa.Enabled == true)
             {
+                MessageBox.Show("Đang xóa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 sql = "Delete From NHANVIEN Where MaNV =N'" + txtMaNV.Text + "'";
+                
             }
             //Thuc thi cau lenh sql
             cmd = new SqlCommand(sql, con);

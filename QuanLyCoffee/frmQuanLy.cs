@@ -24,8 +24,9 @@ namespace QuanLyCoffee
 
         private void sbtnThongTinNhanVien_Click(object sender, EventArgs e)
         {
-            frmThongTinNhanVien nv = new frmThongTinNhanVien();
-            nv.ShowDialog();
+            frmThongTinNV nv = new frmThongTinNV() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pLoad.Controls.Add(nv);
+            nv.Show();
         }
 
         private void sbtnExit_Click(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace QuanLyCoffee
             DialogResult tb = MessageBox.Show("Bạn có muốn đăng xuất hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (tb == DialogResult.OK)
             {
-                frmLogin frm = new frmLogin();
+                fLogin frm = new fLogin();
                 frm.Show();
                 Close();
             }
@@ -48,11 +49,7 @@ namespace QuanLyCoffee
         }
 
 
-        private void panel6_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
+        
 
         private void ptbSleep_Click(object sender, EventArgs e)
         {
@@ -75,8 +72,30 @@ namespace QuanLyCoffee
 
         private void sbtnNKHD_Click(object sender, EventArgs e)
         {
-            fAdmin f = new fAdmin();
-            f.Show();
+            fAdmin nv = new fAdmin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pLoad.Controls.Add(nv);
+            nv.Show();
+        }
+
+        private void sbtnLichLam_Click(object sender, EventArgs e)
+        {
+            Lichlam ll = new Lichlam() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pLoad.Controls.Add(ll);
+            ll.Show();
+        }
+
+
+        private void pLoad_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void sbtnTKNV_Click(object sender, EventArgs e)
+        {
+            frmAccount ac = new frmAccount() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pLoad.Controls.Add(ac);
+            ac.Show();
         }
     }
 }
