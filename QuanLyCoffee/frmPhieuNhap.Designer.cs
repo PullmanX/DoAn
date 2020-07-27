@@ -1,6 +1,6 @@
 ﻿namespace QuanLyCoffee
 {
-    partial class Phieunhap
+    partial class frmPhieuNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,7 @@
             this.dgvKetQua = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMaHang = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pa1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtTenHang = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.errChiTiet = new System.Windows.Forms.ErrorProvider(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2.SuspendLayout();
@@ -61,7 +61,7 @@
             this.lblTieuDe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTieuDe.AutoSize = true;
             this.lblTieuDe.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieuDe.Location = new System.Drawing.Point(302, 16);
+            this.lblTieuDe.Location = new System.Drawing.Point(238, 17);
             this.lblTieuDe.Name = "lblTieuDe";
             this.lblTieuDe.Size = new System.Drawing.Size(262, 31);
             this.lblTieuDe.TabIndex = 8;
@@ -71,7 +71,7 @@
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.dgvKetQua);
-            this.groupBox2.Location = new System.Drawing.Point(106, 265);
+            this.groupBox2.Location = new System.Drawing.Point(42, 266);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(629, 222);
             this.groupBox2.TabIndex = 7;
@@ -105,7 +105,7 @@
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.txtSoLuong);
             this.groupBox1.Controls.Add(this.txtTenHang);
-            this.groupBox1.Location = new System.Drawing.Point(106, 48);
+            this.groupBox1.Location = new System.Drawing.Point(42, 49);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(629, 211);
             this.groupBox1.TabIndex = 6;
@@ -120,6 +120,14 @@
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Size = new System.Drawing.Size(122, 20);
             this.txtMaHang.TabIndex = 16;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(451, 48);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 20);
+            this.panel1.TabIndex = 35;
             // 
             // pa1
             // 
@@ -238,7 +246,7 @@
             this.txtSoLuong.Location = new System.Drawing.Point(520, 48);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(87, 20);
-            this.txtSoLuong.TabIndex = 18;
+            this.txtSoLuong.TabIndex = 24;
             // 
             // txtTenHang
             // 
@@ -247,31 +255,26 @@
             this.txtTenHang.Location = new System.Drawing.Point(291, 48);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.Size = new System.Drawing.Size(142, 20);
-            this.txtTenHang.TabIndex = 24;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(451, 48);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 20);
-            this.panel1.TabIndex = 35;
+            this.txtTenHang.TabIndex = 18;
             // 
             // errChiTiet
             // 
             this.errChiTiet.ContainerControl = this;
             // 
-            // Phieunhap
+            // frmPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 503);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(713, 504);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Phieunhap";
-            this.Text = "Phieunhap";
-            this.Load += new System.EventHandler(this.Phieunhap_Load_1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmPhieuNhap";
+            this.Text = "Phiếu Nhập";
+            this.Load += new System.EventHandler(this.Phieunhap_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -11,13 +11,13 @@ using System.Data.SqlClient;
 
 namespace QuanLyCoffee
 {
-    public partial class XLichLam : Form
+    public partial class frmXemLichLam : Form
     {
         SqlConnection con;//Khai báo đối tượng thực hiện kết nối đến cơ sở dữ liệu
         SqlCommand cmd;//Khai báo đối tượng thực hiện các câu lệnh truy vấn
         SqlDataAdapter dap;//Khai báo đối tượng gắn kết DataSource với DataSet
         DataSet ds;//Đối tượng chứa dữ liệu tại local
-        public XLichLam()
+        public frmXemLichLam()
         {
             InitializeComponent();
         }
@@ -40,7 +40,7 @@ namespace QuanLyCoffee
                 //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
                 //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
 
-                con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
+                con.ConnectionString = (@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QuanLyQuanCafe;Integrated Security=True");
                 LoadDuLieu("Select * from LICHLAM");
                 //An groupbox chi tiet
         }

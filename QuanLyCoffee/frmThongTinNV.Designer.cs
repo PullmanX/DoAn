@@ -77,7 +77,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(94, 48);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(98, 20);
-            this.txtMaNV.TabIndex = 16;
+            this.txtMaNV.TabIndex = 0;
             // 
             // pa1
             // 
@@ -226,7 +226,7 @@
             this.txtSDT.Location = new System.Drawing.Point(508, 77);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(116, 20);
-            this.txtSDT.TabIndex = 27;
+            this.txtSDT.TabIndex = 5;
             // 
             // txtTenNV
             // 
@@ -235,7 +235,7 @@
             this.txtTenNV.Location = new System.Drawing.Point(287, 48);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(142, 20);
-            this.txtTenNV.TabIndex = 18;
+            this.txtTenNV.TabIndex = 1;
             // 
             // dtpNgSinh
             // 
@@ -245,7 +245,7 @@
             this.dtpNgSinh.Location = new System.Drawing.Point(508, 48);
             this.dtpNgSinh.Name = "dtpNgSinh";
             this.dtpNgSinh.Size = new System.Drawing.Size(116, 20);
-            this.dtpNgSinh.TabIndex = 22;
+            this.dtpNgSinh.TabIndex = 2;
             // 
             // txtDiaChi
             // 
@@ -254,7 +254,7 @@
             this.txtDiaChi.Location = new System.Drawing.Point(287, 77);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(142, 20);
-            this.txtDiaChi.TabIndex = 24;
+            this.txtDiaChi.TabIndex = 4;
             // 
             // cboGioiTinh
             // 
@@ -267,7 +267,7 @@
             this.cboGioiTinh.Location = new System.Drawing.Point(94, 77);
             this.cboGioiTinh.Name = "cboGioiTinh";
             this.cboGioiTinh.Size = new System.Drawing.Size(98, 21);
-            this.cboGioiTinh.TabIndex = 23;
+            this.cboGioiTinh.TabIndex = 3;
             // 
             // errChiTiet
             // 

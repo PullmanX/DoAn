@@ -92,41 +92,11 @@
     <Compile Include="DTO\Lichlam.cs" />
     <Compile Include="DTO\Menu.cs" />
     <Compile Include="DTO\Table.cs" />
-    <Compile Include="fAdmin.cs">
+    <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAdmin.Designer.cs">
-      <DependentUpon>fAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fLogin.Designer.cs">
-      <DependentUpon>fLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAccount.Designer.cs">
-      <DependentUpon>frmAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmKhuVuc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmKhuVuc.Designer.cs">
-      <DependentUpon>frmKhuVuc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmLichlam.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLichlam.Designer.cs">
-      <DependentUpon>FrmLichlam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmNhanVien.Designer.cs">
-      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -134,17 +104,23 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuanLy.Designer.cs">
       <DependentUpon>frmQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenu.Designer.cs">
-      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThongTinNV.cs">
       <SubType>Form</SubType>
@@ -152,38 +128,37 @@
     <Compile Include="frmThongTinNV.Designer.cs">
       <DependentUpon>frmThongTinNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="fTableManager.cs">
+    <Compile Include="frmTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fTableManager.Designer.cs">
-      <DependentUpon>fTableManager.cs</DependentUpon>
+    <Compile Include="frmTableManager.Designer.cs">
+      <DependentUpon>frmTableManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="ketnoi.cs" />
-    <Compile Include="Lichlam.cs">
+    <Compile Include="frmLichLam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lichlam.Designer.cs">
-      <DependentUpon>Lichlam.cs</DependentUpon>
+    <Compile Include="frmLichLam.Designer.cs">
+      <DependentUpon>frmLichLam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phieunhap.cs">
+    <Compile Include="frmPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phieunhap.Designer.cs">
-      <DependentUpon>Phieunhap.cs</DependentUpon>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XLichLam.cs">
+    <Compile Include="frmXemLichLam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XLichLam.Designer.cs">
-      <DependentUpon>XLichLam.cs</DependentUpon>
+    <Compile Include="frmXemLichLam.Designer.cs">
+      <DependentUpon>frmXemLichLam.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fAdmin.resx">
-      <DependentUpon>fAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAccount.resx">
       <DependentUpon>frmAccount.cs</DependentUpon>
@@ -191,26 +166,20 @@
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLy.resx">
       <DependentUpon>frmQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMenu.resx">
-      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongTinNV.resx">
       <DependentUpon>frmThongTinNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fTableManager.resx">
-      <DependentUpon>fTableManager.cs</DependentUpon>
+    <EmbeddedResource Include="frmTableManager.resx">
+      <DependentUpon>frmTableManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lichlam.resx">
-      <DependentUpon>Lichlam.cs</DependentUpon>
+    <EmbeddedResource Include="frmLichLam.resx">
+      <DependentUpon>frmLichLam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phieunhap.resx">
-      <DependentUpon>Phieunhap.cs</DependentUpon>
+    <EmbeddedResource Include="frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -218,8 +187,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="XLichLam.resx">
-      <DependentUpon>XLichLam.cs</DependentUpon>
+    <EmbeddedResource Include="frmXemLichLam.resx">
+      <DependentUpon>frmXemLichLam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace QuanLyCoffee
 {
-    partial class XLichLam
+    partial class frmXemLichLam
     {
         /// <summary>
         /// Required designer variable.
@@ -66,15 +66,16 @@
             this.dgvKetQua.Size = new System.Drawing.Size(850, 276);
             this.dgvKetQua.TabIndex = 0;
             // 
-            // XLichLam
+            // frmXemLichLam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(952, 493);
             this.Controls.Add(this.lblTieuDe);
             this.Controls.Add(this.groupBox2);
-            this.Name = "XLichLam";
-            this.Text = "XLichLam";
+            this.Name = "frmXemLichLam";
+            this.Text = "Xem Lịch Làm";
             this.Load += new System.EventHandler(this.XLichLam_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();

@@ -14,14 +14,14 @@ using System.Windows.Forms;
 
 namespace QuanLyCoffee
 {
-    public partial class fAdmin : Form
+    public partial class frmAdmin : Form
     {
         BindingSource foodList = new BindingSource();
 
         BindingSource accountList = new BindingSource();
 
         public Account loginAccount;
-        public fAdmin()
+        public frmAdmin()
         {
             InitializeComponent();
             LoadData();

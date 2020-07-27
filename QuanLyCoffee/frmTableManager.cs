@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace QuanLyCoffee
 {
-    public partial class fTableManager : Form
+    public partial class frmTableManager : Form
     {
        // private Account loginAccount;
 
@@ -23,7 +23,7 @@ namespace QuanLyCoffee
             get { return loginAccount; }
             set { loginAccount = value; ChangeAccount(loginAccount.Type); }
         }*/
-        public fTableManager()
+        public frmTableManager()
         {
             InitializeComponent();
 
@@ -149,7 +149,7 @@ namespace QuanLyCoffee
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            XLichLam f = new XLichLam();
+            frmXemLichLam f = new frmXemLichLam();
            
             f.ShowDialog();
         }
@@ -260,6 +260,13 @@ namespace QuanLyCoffee
         private void btnLuu_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult tb = MessageBox.Show("Bạn có muốn thoát hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (tb == DialogResult.OK)
+                this.Close();
         }
     }
 }

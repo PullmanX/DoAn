@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
             this.pnQuanLy = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.sbtnTKNV = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnExit = new DevExpress.XtraEditors.SimpleButton();
             this.sbtnLichLam = new DevExpress.XtraEditors.SimpleButton();
@@ -41,7 +42,8 @@
             this.pa1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pLoad = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.snbtPhieuNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pnQuanLy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +53,9 @@
             this.pnQuanLy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnQuanLy.BackColor = System.Drawing.Color.Tan;
+            this.pnQuanLy.Controls.Add(this.panel5);
             this.pnQuanLy.Controls.Add(this.panel1);
+            this.pnQuanLy.Controls.Add(this.snbtPhieuNhap);
             this.pnQuanLy.Controls.Add(this.sbtnTKNV);
             this.pnQuanLy.Controls.Add(this.sbtnExit);
             this.pnQuanLy.Controls.Add(this.sbtnLichLam);
@@ -69,20 +73,28 @@
             this.pnQuanLy.Size = new System.Drawing.Size(222, 542);
             this.pnQuanLy.TabIndex = 2;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(20, 310);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(180, 1);
+            this.panel1.TabIndex = 3;
+            // 
             // sbtnTKNV
             // 
             this.sbtnTKNV.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbtnTKNV.Appearance.ForeColor = System.Drawing.Color.White;
             this.sbtnTKNV.Appearance.Options.UseFont = true;
             this.sbtnTKNV.Appearance.Options.UseForeColor = true;
-            this.sbtnTKNV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnThongTin.ImageOptions.SvgImage")));
+            this.sbtnTKNV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnTKNV.ImageOptions.SvgImage")));
             this.sbtnTKNV.Location = new System.Drawing.Point(20, 276);
             this.sbtnTKNV.Name = "sbtnTKNV";
             this.sbtnTKNV.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.sbtnTKNV.Size = new System.Drawing.Size(180, 28);
             this.sbtnTKNV.TabIndex = 1;
             this.sbtnTKNV.TabStop = false;
-            this.sbtnTKNV.Text = "Tài Khoản Nhan Vien";
+            this.sbtnTKNV.Text = "Tài Khoản Nhân Viên";
             this.sbtnTKNV.Click += new System.EventHandler(this.sbtnTKNV_Click);
             // 
             // sbtnExit
@@ -92,7 +104,7 @@
             this.sbtnExit.Appearance.Options.UseFont = true;
             this.sbtnExit.Appearance.Options.UseForeColor = true;
             this.sbtnExit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnExit.ImageOptions.SvgImage")));
-            this.sbtnExit.Location = new System.Drawing.Point(20, 401);
+            this.sbtnExit.Location = new System.Drawing.Point(20, 468);
             this.sbtnExit.Name = "sbtnExit";
             this.sbtnExit.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.sbtnExit.Size = new System.Drawing.Size(119, 28);
@@ -108,7 +120,7 @@
             this.sbtnLichLam.Appearance.Options.UseFont = true;
             this.sbtnLichLam.Appearance.Options.UseForeColor = true;
             this.sbtnLichLam.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("sbtnLichLam.ImageOptions.SvgImage")));
-            this.sbtnLichLam.Location = new System.Drawing.Point(20, 339);
+            this.sbtnLichLam.Location = new System.Drawing.Point(20, 406);
             this.sbtnLichLam.Name = "sbtnLichLam";
             this.sbtnLichLam.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.sbtnLichLam.Size = new System.Drawing.Size(119, 28);
@@ -120,7 +132,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(20, 435);
+            this.panel4.Location = new System.Drawing.Point(20, 502);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(110, 1);
             this.panel4.TabIndex = 0;
@@ -128,7 +140,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(20, 373);
+            this.panel2.Location = new System.Drawing.Point(20, 440);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(110, 1);
             this.panel2.TabIndex = 0;
@@ -206,13 +218,29 @@
             this.pLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.pLoad_Paint);
             this.pLoad.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pLoad_MouseDown);
             // 
-            // panel1
+            // snbtPhieuNhap
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(20, 310);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 1);
-            this.panel1.TabIndex = 3;
+            this.snbtPhieuNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snbtPhieuNhap.Appearance.ForeColor = System.Drawing.Color.White;
+            this.snbtPhieuNhap.Appearance.Options.UseFont = true;
+            this.snbtPhieuNhap.Appearance.Options.UseForeColor = true;
+            this.snbtPhieuNhap.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.snbtPhieuNhap.Location = new System.Drawing.Point(20, 342);
+            this.snbtPhieuNhap.Name = "snbtPhieuNhap";
+            this.snbtPhieuNhap.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.snbtPhieuNhap.Size = new System.Drawing.Size(119, 28);
+            this.snbtPhieuNhap.TabIndex = 1;
+            this.snbtPhieuNhap.TabStop = false;
+            this.snbtPhieuNhap.Text = "Nhập Hàng";
+            this.snbtPhieuNhap.Click += new System.EventHandler(this.snbtPhieuNhap_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(20, 376);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(110, 1);
+            this.panel5.TabIndex = 3;
             // 
             // frmQuanLy
             // 
@@ -249,6 +277,8 @@
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton sbtnTKNV;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
+        private DevExpress.XtraEditors.SimpleButton snbtPhieuNhap;
     }
 }
 

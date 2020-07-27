@@ -34,7 +34,7 @@ namespace QuanLyCoffee
             DialogResult tb = MessageBox.Show("Bạn có muốn đăng xuất hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (tb == DialogResult.OK)
             {
-                fLogin frm = new fLogin();
+                frmLogin frm = new frmLogin();
                 frm.Show();
                 Close();
             }
@@ -72,14 +72,14 @@ namespace QuanLyCoffee
 
         private void sbtnNKHD_Click(object sender, EventArgs e)
         {
-            fAdmin nv = new fAdmin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmAdmin nv = new frmAdmin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pLoad.Controls.Add(nv);
             nv.Show();
         }
 
         private void sbtnLichLam_Click(object sender, EventArgs e)
         {
-            Lichlam ll = new Lichlam() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmLichLam ll = new frmLichLam() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pLoad.Controls.Add(ll);
             ll.Show();
         }
@@ -96,6 +96,13 @@ namespace QuanLyCoffee
             frmAccount ac = new frmAccount() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pLoad.Controls.Add(ac);
             ac.Show();
+        }
+
+        private void snbtPhieuNhap_Click(object sender, EventArgs e)
+        {
+            frmPhieuNhap pn = new frmPhieuNhap() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pLoad.Controls.Add(pn);
+            pn.Show();
         }
     }
 }

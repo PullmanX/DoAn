@@ -1,6 +1,6 @@
 ﻿namespace QuanLyCoffee
 {
-    partial class fAdmin
+    partial class frmAdmin
     {
         /// <summary>
         /// Required designer variable.

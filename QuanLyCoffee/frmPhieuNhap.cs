@@ -13,7 +13,7 @@ using System.Data.SqlClient;
 
 namespace QuanLyCoffee
 {
-    public partial class Phieunhap : Form
+    public partial class frmPhieuNhap : Form
     {
         //Khai báo các biến toàn cục
         SqlConnection con;//Khai báo đối tượng thực hiện kết nối đến cơ sở dữ liệu
@@ -21,7 +21,7 @@ namespace QuanLyCoffee
         SqlDataAdapter dap;//Khai báo đối tượng gắn kết DataSource với DataSet
         DataSet ds;//Đối tượng chứa dữ liệu tại local
 
-        public Phieunhap()
+        public frmPhieuNhap()
         {
             InitializeComponent();
         }
@@ -49,21 +49,21 @@ namespace QuanLyCoffee
             btnHuy.Enabled = hien;
         }
 
-        /*private void Phieunhap_Load(object sender, EventArgs e)
+        private void Phieunhap_Load(object sender, EventArgs e)
         {
             //Tạo đối tượng Connection
             con = new SqlConnection();
             //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
             //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
 
-            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QuanLyQuanCafe;Integrated Security=True");
             LoadDuLieu("Select * from PHIEUNHAP");
             //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
             //An groupbox chi tiet
             HienChiTiet(false);
-        }*/
+        }
 
 
         private void dtgView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -82,7 +82,7 @@ namespace QuanLyCoffee
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            lblTieuDe.Text = "THÊM NHÂN VIÊN";
+            lblTieuDe.Text = "THÊM PHIẾU NHẬP";
             //Cam nut sua xoa
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
@@ -97,7 +97,7 @@ namespace QuanLyCoffee
         private void btnSua_Click(object sender, EventArgs e)
         {
             lblTieuDe.Text = "SỮA THÔNG TIN PHIẾU NHẬP";
-            txtMaHang.Enabled = true;
+            txtMaHang.Enabled = false;
             txtTenHang.Enabled = true;
             txtSoLuong.Enabled = true;
             btnLuu.Enabled = true;
@@ -107,10 +107,28 @@ namespace QuanLyCoffee
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            lblTieuDe.Text = "XÓA THÔNG TIN NHÂN VIÊN";
+            lblTieuDe.Text = "XÓA PHIẾU NHẬP";
             btnSua.Enabled = false;
             btnThem.Enabled = false;
             btnLuu.Enabled = true;
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            //Thiết lập lại các nút như ban đầu
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            btnThem.Enabled = true;
+           //Cam nhap
+            HienChiTiet(false);
+        }
+    
+
+        
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -121,30 +139,32 @@ namespace QuanLyCoffee
                 con.Open();
             //Chúng ta sử dụng control ErrorProvider để hiển thị lỗi
             //Kiểm tra tên sản phầm có bị để trống không
-            if (txtMaHang.Text.Trim() == "")
+            if (txtTenHang.Text.Trim() == "")
             {
-                errChiTiet.SetError(txtMaHang, "Bạn không để trống tên sản phẩm!");
+                errChiTiet.SetError(txtTenHang, "Bạn không để trống tên hàng!");
                 return;
             }
             else
             {
                 errChiTiet.Clear();
             }
-                //Insert vao CSDL
+            //Insert vao CSDL
             sql = "INSERT INTO PHIEUNHAP(MaHang,TenHang,SoLuong )VALUES (";
             sql += "N'" + txtMaHang.Text + "',N'" + txtTenHang.Text + "',N'" + txtSoLuong.Text + "')";
             //Nếu nút Sửa enable thì thực hiện cập nhật dữ liệu
             if (btnSua.Enabled == true)
             {
-                sql = "Update NHANVIEN SET ";
+                MessageBox.Show("Đang tiến hành sửa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                sql = "Update PHIEUNHAP SET ";
                 sql += "TenHang = N'" + txtTenHang.Text + "',";
-                sql += "SoLuong = N'" + txtSoLuong.Text + "', ";
-                sql += "Where MaHang = N'" + txtMaHang.Text + "'";
-
+                sql += "SoLuong = N'" + txtSoLuong.Text + "' ";
+                sql += "Where MaHang = N'" + txtMaHang.Text + "' ";
             }
+
             //Nếu nút Xóa enable thì thực hiện xóa dữ liệu
             if (btnXoa.Enabled == true)
             {
+                MessageBox.Show("Đang xóa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 sql = "Delete From PHIEUNHAP Where MaHang =N'" + txtMaHang.Text + "'";
             }
             //Thuc thi cau lenh sql
@@ -159,38 +179,7 @@ namespace QuanLyCoffee
             HienChiTiet(false);
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
-        }
-
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            //Thiết lập lại các nút như ban đầu
-            btnXoa.Enabled = false;
-            btnSua.Enabled = false;
             btnThem.Enabled = true;
-           //Cam nhap
-            HienChiTiet(false);
-        }
-    
-
-        private void Phieunhap_Load_1(object sender, EventArgs e)
-        {
-            //Tạo đối tượng Connection
-            con = new SqlConnection();
-            //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
-            //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
-
-            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
-            LoadDuLieu("Select * from PHIEUNHAP");
-            //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            //An groupbox chi tiet
-            HienChiTiet(false);
-        }
-
-        private void btnThoat_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -19,9 +19,13 @@ namespace QuanLyCoffee
 
         private void mntThoat_Click(object sender, EventArgs e)
         {
-            fLogin frm = new fLogin();
-            frm.Show();
-            this.Close();
+            DialogResult tb = MessageBox.Show("Bạn có muốn đăng xuất hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (tb == DialogResult.OK)
+            {
+                frmLogin frm = new frmLogin();
+                frm.Show();
+                this.Close();
+            }
         }
 
         private void mntMenu_Click(object sender, EventArgs e)
@@ -31,7 +35,7 @@ namespace QuanLyCoffee
 
         private void mntNKHD_Click(object sender, EventArgs e)
         {
-            fTableManager frmmn = new fTableManager();
+            frmTableManager frmmn = new frmTableManager();
             frmmn.Show();
         
         }
@@ -43,13 +47,13 @@ namespace QuanLyCoffee
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            fTableManager frmmn = new fTableManager();
+            frmTableManager frmmn = new frmTableManager();
             frmmn.Show();
         }
 
         private void mntXemLL_Click(object sender, EventArgs e)
         {
-            XLichLam xll = new XLichLam();
+            frmXemLichLam xll = new frmXemLichLam();
             xll.Show();
         }
     }

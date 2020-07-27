@@ -59,7 +59,7 @@ namespace QuanLyCoffee
             //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
             //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
 
-            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QL_NHANVIEN;Integrated Security=True");
+            con.ConnectionString = (@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QuanLyQuanCafe;Integrated Security=True");
             LoadDuLieu("Select * from NHANVIEN");
             //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
             btnSua.Enabled = false;
@@ -71,10 +71,10 @@ namespace QuanLyCoffee
 
         private void dtgView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnSua.Enabled = true;
-            btnXoa.Enabled = true;
-            btnThem.Enabled = false;
-            btnHuy.Enabled = true;
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
+                btnThem.Enabled = false;
+                btnHuy.Enabled = true;
                 DataGridViewRow row = new DataGridViewRow();
                 row = dgvKetQua.Rows[e.RowIndex];
                 txtMaNV.Text = row.Cells["MaNV"].Value.ToString();
@@ -161,7 +161,6 @@ namespace QuanLyCoffee
             {
                 MessageBox.Show("Đang xóa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 sql = "Delete From NHANVIEN Where MaNV =N'" + txtMaNV.Text + "'";
-                
             }
             //Thuc thi cau lenh sql
             cmd = new SqlCommand(sql, con);
@@ -175,6 +174,7 @@ namespace QuanLyCoffee
             HienChiTiet(false);
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

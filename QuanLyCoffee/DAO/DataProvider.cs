@@ -20,7 +20,7 @@ namespace QuanLyCoffee.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=.\\sqlexpress;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-ECDLIHU;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

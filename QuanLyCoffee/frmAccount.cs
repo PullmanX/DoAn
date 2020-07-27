@@ -38,6 +38,22 @@ namespace QuanLyCoffee
             dgvKetQua.DataSource = ds.Tables[0];
         }
 
+        private void frmAccount_Load(object sender, EventArgs e)
+        {
+            //Tạo đối tượng Connection
+            con = new SqlConnection();
+            //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
+            //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
+
+            con.ConnectionString = (@"Data Source=DESKTOP-ECDLIHU;Initial Catalog=QuanLyQuanCafe;Integrated Security=True");
+            LoadDuLieu("Select * from Account");
+            //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            //An groupbox chi tiet
+            HienChiTiet(false);
+        }
+
         //Phương thức ẩn hiện các control ở groupbox chi tiết
         private void HienChiTiet(Boolean hien)
         {
@@ -67,8 +83,6 @@ namespace QuanLyCoffee
             cboLoai.Text = row.Cells["Type"].Value.ToString();
             cboQuyen.Text = row.Cells["id_user"].Value.ToString();
             txtTen.Text = row.Cells["DisplayName"].Value.ToString();
-           
-
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -144,7 +158,6 @@ namespace QuanLyCoffee
             {
                 MessageBox.Show("Đang xóa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 sql = "Delete From Account Where UserName =N'" + txtTaikhoan.Text + "'";
-
             }
             //Thuc thi cau lenh sql
             cmd = new SqlCommand(sql, con);
@@ -158,6 +171,7 @@ namespace QuanLyCoffee
             HienChiTiet(false);
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
+            btnThem.Enabled = true;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -174,20 +188,6 @@ namespace QuanLyCoffee
             this.Close();
         }
 
-        private void frmAccount_Load(object sender, EventArgs e)
-        {
-            //Tạo đối tượng Connection
-            con = new SqlConnection();
-            //Truyền vào chuỗi kết nối tới cơ sở dữ liệu
-            //Gọi Application.StartupPath để lấy đường dẫn tới thư mục chứa file chạy chương trình 
-
-            con.ConnectionString = (@"Data Source=DESKTOP-JB1Q7II\SQLEXPRESS;Initial Catalog=QuanLyQuanCafe;Integrated Security=True");
-            LoadDuLieu("Select * from Account");
-            //Khi Form mới Load lên thì ẩn các bút Sửa và Xóa
-            btnSua.Enabled = false;
-            btnXoa.Enabled = false;
-            //An groupbox chi tiet
-            HienChiTiet(false);
-        }
+        
     }
 }
