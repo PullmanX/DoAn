@@ -63,7 +63,7 @@ namespace QuanLyCoffee
             btnHuy.Enabled = true;
             DataGridViewRow row = new DataGridViewRow();
             row = dgvKetQua.Rows[e.RowIndex];
-            txtCalam.Text = row.Cells["Calam"].Value.ToString();
+            txtCalam.Text = row.Cells["id"].Value.ToString();
             txtThu2.Text = row.Cells["Thu2"].Value.ToString();
             txtThu3.Text = row.Cells["Thu3"].Value.ToString();
             txtThu4.Text = row.Cells["Thu4"].Value.ToString();
@@ -82,6 +82,7 @@ namespace QuanLyCoffee
             btnXoa.Enabled = false;
             //Hiện GroupBox Chi tiết
             HienChiTiet(true);
+            txtCalam.Clear();
             txtThu2.Clear();
             txtThu3.Clear();
             txtThu4.Clear();
@@ -133,7 +134,7 @@ namespace QuanLyCoffee
                   errChiTiet.Clear();
               }
             //Insert vao CSDL
-            sql = "INSERT INTO LICHLAM(Calam, Thu2,Thu3,Thu4,Thu5,Thu6,Thu7,CN)VALUES (";
+            sql = "INSERT INTO LICHLAM(id,Thu2,Thu3,Thu4,Thu5,Thu6,Thu7,CN)VALUES (";
             sql += "N'" + txtCalam.Text + "',N'" + txtThu2.Text + "',N'" + txtThu3.Text + "',N'" + txtThu4.Text + "',N'" + txtThu5.Text + "',N'" + txtThu6.Text + "',N'" + txtThu7.Text + "',N'" + txtCN.Text + "')";
             //Nếu nút Sửa enable thì thực hiện cập nhật dữ liệu
             if (btnSua.Enabled == true)
@@ -146,15 +147,14 @@ namespace QuanLyCoffee
                 sql += "Thu5 = N'" + txtThu5.Text + "',";
                 sql += "Thu6 = N'" + txtThu6.Text + "',";
                 sql += "Thu7 = N'" + txtThu7.Text + "',";
-                sql += "CN = N'" + txtCN.Text + "',";
-                sql += "Where Calam = N'" + txtCalam.Text + "' ";
-
+                sql += "CN = N'" + txtCN.Text + "' ";
+                sql += "Where id = N'" + txtCalam.Text + "'";
             }
             //Nếu nút Xóa enable thì thực hiện xóa dữ liệu
             if (btnXoa.Enabled == true)
             {
                 MessageBox.Show("Đang xóa", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                sql = "Delete From LICHLAM Where Calam =N'" + txtCalam.Text + "'";
+                sql = "Delete From LICHLAM Where id = N'" + txtCalam.Text + "'";
             }
             //Thuc thi cau lenh sql
             cmd = new SqlCommand(sql, con);

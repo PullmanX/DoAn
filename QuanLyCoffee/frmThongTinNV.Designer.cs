@@ -55,6 +55,9 @@
             this.dgvKetQua = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtTenTK = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errChiTiet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
@@ -67,7 +70,7 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(435, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 55);
+            this.panel1.Size = new System.Drawing.Size(1, 80);
             this.panel1.TabIndex = 36;
             // 
             // txtMaNV
@@ -84,7 +87,7 @@
             this.pa1.BackColor = System.Drawing.Color.Black;
             this.pa1.Location = new System.Drawing.Point(198, 48);
             this.pa1.Name = "pa1";
-            this.pa1.Size = new System.Drawing.Size(1, 55);
+            this.pa1.Size = new System.Drawing.Size(1, 80);
             this.pa1.TabIndex = 35;
             // 
             // label1
@@ -288,6 +291,8 @@
             // 
             this.dgvKetQua.BackgroundColor = System.Drawing.Color.White;
             this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetQua.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaNV});
             this.dgvKetQua.Location = new System.Drawing.Point(13, 32);
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.Size = new System.Drawing.Size(605, 167);
@@ -308,6 +313,8 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.txtTenTK);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.txtMaNV);
             this.groupBox1.Controls.Add(this.pa1);
@@ -334,6 +341,30 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
+            // 
+            // txtTenTK
+            // 
+            this.txtTenTK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenTK.Enabled = false;
+            this.txtTenTK.Location = new System.Drawing.Point(94, 107);
+            this.txtTenTK.Name = "txtTenTK";
+            this.txtTenTK.Size = new System.Drawing.Size(98, 20);
+            this.txtTenTK.TabIndex = 37;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 110);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 13);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Tên Tài Khoản:";
+            // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
             // 
             // frmThongTinNV
             // 
@@ -387,5 +418,8 @@
         private System.Windows.Forms.DataGridView dgvKetQua;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.TextBox txtTenTK;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
     }
 }

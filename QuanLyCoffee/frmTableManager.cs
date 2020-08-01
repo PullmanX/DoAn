@@ -69,8 +69,14 @@ namespace QuanLyCoffee
 
                 switch (item.Status)
                 {
-                    case "Trống":
+                    case "Thường":
                         btn.BackColor = Color.Aqua;
+                        break;
+                    case "Máy Lạnh":
+                        btn.BackColor = Color.Chartreuse;
+                        break;
+                    case "Ngồi Bệt":
+                        btn.BackColor = Color.Green;
                         break;
                     default:
                         btn.BackColor = Color.Chartreuse;
@@ -266,7 +272,11 @@ namespace QuanLyCoffee
         {
             DialogResult tb = MessageBox.Show("Bạn có muốn thoát hay không !!", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (tb == DialogResult.OK)
+            {
                 this.Close();
+                frmNhanVien frm = new frmNhanVien();
+                frm.Show();
+            }   
         }
     }
 }

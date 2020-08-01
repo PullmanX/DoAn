@@ -63,13 +63,6 @@ namespace QuanLyCoffee
                 Close();
         }
 
-        
-
-        private void pLoad_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void sbtnNKHD_Click(object sender, EventArgs e)
         {
             frmAdmin nv = new frmAdmin() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -103,6 +96,13 @@ namespace QuanLyCoffee
             frmPhieuNhap pn = new frmPhieuNhap() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.pLoad.Controls.Add(pn);
             pn.Show();
+        }
+
+        private void snbtKhuVuc_Click(object sender, EventArgs e)
+        {
+            frmKhuVuc kv = new frmKhuVuc() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.pLoad.Controls.Add(kv);
+            kv.Show();
         }
     }
 }

@@ -47,6 +47,7 @@ namespace QuanLyCoffee
             cboGioiTinh.Enabled = hien;
             txtDiaChi.Enabled = hien;
             txtSDT.Enabled = hien;
+            txtTenTK.Enabled = hien;
             //Ẩn hiện 2 nút Lưu và Hủy
             btnLuu.Enabled = hien;
             btnHuy.Enabled = hien;
@@ -83,6 +84,7 @@ namespace QuanLyCoffee
                 cboGioiTinh.Text = row.Cells["GioiTinh"].Value.ToString();
                 txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString();
                 txtSDT.Text = row.Cells["SDT"].Value.ToString();
+                txtTenTK.Text = row.Cells["TenTaiKhoan"].Value.ToString();
 
         }
 
@@ -100,6 +102,7 @@ namespace QuanLyCoffee
             dtpNgSinh.ResetText();
             cboGioiTinh.ResetText();
             txtDiaChi.Clear();
+            txtTenTK.Clear();
         }
 
 
@@ -141,8 +144,8 @@ namespace QuanLyCoffee
                 errChiTiet.Clear();
             }
                 //Insert vao CSDL
-            sql = "INSERT INTO NHANVIEN(MaNV,TenNV,NgSinh, GioiTinh, DiaChi, SDT )VALUES (";
-            sql += "N'" + txtMaNV.Text + "',N'" + txtTenNV.Text + "','" + dtpNgSinh.Value + "','" + cboGioiTinh.Text + "',N'" + txtDiaChi.Text + "',N'" + txtSDT.Text + "')";
+            sql = "INSERT INTO NHANVIEN(MaNV,TenNV,NgSinh, GioiTinh, DiaChi, SDT,TenTaiKhoan )VALUES (";
+            sql += "N'" + txtMaNV.Text + "',N'" + txtTenNV.Text + "','" + dtpNgSinh.Value + "','" + cboGioiTinh.Text + "',N'" + txtDiaChi.Text + "',N'" + txtSDT.Text + "',N'" + txtTenTK.Text + "' )";
             //Nếu nút Sửa enable thì thực hiện cập nhật dữ liệu
             if (btnSua.Enabled == true)
             {
@@ -152,9 +155,9 @@ namespace QuanLyCoffee
                 sql += "NgSinh = '" + dtpNgSinh.Value + "',";
                 sql += "GioiTinh = '" + cboGioiTinh.Text + "',";
                 sql += "DiaChi = N'" + txtDiaChi.Text + "', ";
-                sql += "SDT = N'" + txtSDT.Text + "' ";
+                sql += "SDT = N'" + txtSDT.Text + "',";
+                sql += "TenTaiKhoan = N'" + txtTenTK.Text + "'";
                 sql += "Where MaNV = N'" + txtMaNV.Text + "'";
-
             }
             //Nếu nút Xóa enable thì thực hiện xóa dữ liệu
             if (btnXoa.Enabled == true)
@@ -190,6 +193,5 @@ namespace QuanLyCoffee
         {
             this.Close();
         }
-
     }
 }
